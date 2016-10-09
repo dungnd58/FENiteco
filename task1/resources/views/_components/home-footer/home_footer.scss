@@ -1,0 +1,14 @@
+.space-clear {
+    clear: both;
+}
+
+.home-footer-container {
+    height: 100px;
+    margin-top: 20px;
+    background-color: $WHITE;
+
+    .home-footer-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+}

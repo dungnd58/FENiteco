@@ -1,0 +1,24 @@
+{
+    "items": [
+        {
+            "content": "Discover new countries and culture.",
+            "icons": [
+                {
+                    "src":  "/public/img/earth.png"
+                }
+            ]
+        },
+
+        {
+            "content": "Meet new friends from all around the world."
+        },
+
+        {
+            "content": "Prepare for your future trips."
+        },
+
+        {
+            "content": "Share greate moments of your adventures."
+        }
+    ]
+}

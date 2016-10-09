@@ -1,0 +1,15 @@
+.home-search-form-wrapper {
+    background-color: $WHITE;
+    color: $DARK_GRAY_TEXT;
+    width: 30%;
+    min-height: 250px;
+    box-shadow: 1px 1px 1px 1px $GRAY;
+    float: left;
+
+    @media (max-width: $TABLET){
+        margin-top: 50px;
+        width: 100%;
+        float: none;
+        clear: both;
+    }
+}
