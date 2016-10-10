@@ -16,6 +16,7 @@
 
             img, .home-header__name {
                 display: inline-block;
+                line-height: 1.6;
             }
 
             .home-header__name {
@@ -24,6 +25,17 @@
                 span:nth-child(1), span:nth-child(2){
                     font-size: 32px;
                     color: $BROWN_RED;
+                    display: inline-block;
+
+                    @media (max-width: $PHONE){
+                        font-size: 26px;
+                        line-height: 2;
+                    }
+
+                     @media (max-width: 565px){
+                        line-height: 1;
+                        letter-spacing: 1px;
+                    } 
                 }
 
                 span:nth-child(2){
@@ -33,6 +45,23 @@
                 span:nth-child(3){
                     font-size: 19PX;
                     color: $GRAY;
+                    font-style: italic;
+                }
+
+                @media (max-width: $SMALL_LAPTOP){
+                    line-height: 1;
+
+                    span:nth-child(3){
+                        display: block;
+                    }
+                }
+
+                @media (max-width: $TABLET){
+                    line-height: 1.6;
+
+                    span:nth-child(3){
+                        display: none;
+                    }
                 }
             }
         }
@@ -41,7 +70,8 @@
             float: right;
             width: 30%;
             text-align: right;
-            padding: 7px 0;
+            line-height: 3.4;
+            position: relative;
 
             span {
                 font-size: 16PX;
@@ -52,6 +82,7 @@
                 display: inline-block;
 
                 .social-icon-list__item {
+                    cursor: pointer;
                     display: inline-block;
                     color: $WHITE;
                     background-color: $GRAY;
@@ -63,6 +94,91 @@
                     line-height: 2;
                 }
             }
+
+            .social-droplist-opening-button {
+                text-decoration: none;
+                display: none;
+                width: 90px;
+                height: 47px;
+                border: 1px solid $DARK_GRAY_TEXT;
+                color: $DARK_GRAY_TEXT;
+                font-size: 16px;
+                text-align: center;
+                line-height: 3;
+
+                span {
+                    margin-right: 5px;
+                    color: $DARK_GRAY_TEXT;
+                }
+
+                i {
+                    position: absolute;
+                    margin-top: 12px;
+                }
+            }
+
+            .social-drop-down-list {
+                display: none;
+                width: 90px;
+                background-color: $WHITE;
+                position: absolute;
+                z-index: 5;
+                font-size: 16px;
+                text-align: center;
+                line-height: 2.9;
+                border: 1px solid $DARK_GRAY_TEXT;
+                padding: 0;
+                margin-top: -3px;
+                right: 0;
+                
+                .social-drop-down-list__item {
+                    cursor: pointer;
+                    list-style-type: none;
+                    display: inline-block;
+                    height: 47px;
+                    width: 100%;
+                    border-bottom: 1px solid $DARK_GRAY_TEXT;
+                    transition: all 200ms ease;
+
+                    &:hover {
+                        background-color: $LIGHT_GRAY_TEXT;
+                    }
+
+                    &:last-child {
+                        border-bottom: 0;
+                    }
+
+                    .social-icon-list__item {
+                        display: inline-block;
+                        color: $WHITE;
+                        background-color: $BLACK;
+                        border-radius: 50%;
+                        font-size: 16px;
+                        height: 30px;
+                        width: 30px;
+                        text-align: center;
+                        line-height: 2;
+                    }
+                }
+            }
+
+            @media (max-width: $TABLET){
+                & > span, .home-header-social-icon__list {
+                    display: none;
+                }
+
+                .social-droplist-opening-button {
+                    display: inline-block;
+                }
+
+                .social-drop-down-list {
+                    display: block;
+                }
+            }
         }
     }
+}
+
+.fa-sort-up-margin-top {
+    margin-top: 18px !important;
 }

@@ -3,12 +3,89 @@
 }
 
 .home-footer-container {
-    height: 100px;
     margin-top: 20px;
     background-color: $WHITE;
 
     .home-footer-wrapper {
-        width: 100%;
         height: 100%;
+        text-align: center;
+        color: $DARK_GRAY_TEXT;
+        font-size: 15px;
+
+        .home-footer-list-links, .home-footer-social, .home-footer-email {
+            width: 24.5%;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .home-footer-list-links {
+            .list-links__content {
+                padding: 0 18px;
+            }
+        }
+
+
+        .home-footer-social {
+            .social-icon__wrapper {
+                widows: 100%;
+                height: 40px;
+                line-height: 2.7;
+
+                .social-icon__icon {
+                    cursor: pointer;
+                    display: inline-block;
+                    color: $WHITE;
+                    background-color: $BLACK;
+                    border-radius: 50%;
+                    font-size: 16px;
+                    height: 30px;
+                    width: 30px;
+                    text-align: center;
+                    line-height: 2;
+                }
+
+                span { margin-left: 7px; }
+            }
+        }
+
+        .home-footer-copyright {
+            width: 100%;
+            border: 1 px solid black;
+        }
+
+        .list-links__title {
+            font-weight: 700;
+            font-size: 17px !important;
+        }
+
+        .home-footer-copyright {
+            border: 1px solid black;
+            height: 45px;
+
+            .list-links__content {
+                font-weight: 300;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: $TABLET){
+            .home-footer-list-links, .home-footer-social {
+                width: 32.8%;
+            }
+
+            .home-footer-email {
+                width: 100%;
+            }
+        }
+
+         @media (max-width: $BIG_PHONE){
+            .home-footer-list-links {
+                width: 49.5%;
+            }
+
+            .home-footer-email, .home-footer-social {
+                width: 100%;
+            }
+        }
     }
 }

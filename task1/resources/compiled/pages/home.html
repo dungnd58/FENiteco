@@ -67,9 +67,83 @@
                     <i class="fa fa-google-plus"></i>
                 </div>
             </div>
+
+            <!-- Mobile -->
+            <a class="social-droplist-opening-button">
+                <span>Del pa</span> <i class="fa fa-sort-down"></i>
+            </a>
+
+            <ul class="social-drop-down-list">
+                <li class="social-drop-down-list__item">
+                    <div class="social-icon-list__item">
+                        <i class="fa fa-facebook"></i>
+                    </div>
+                </li>
+
+                <li class="social-drop-down-list__item">
+                    <div class="social-icon-list__item">
+                        <i class="fa fa-twitter"></i>
+                    </div>
+                </li>
+
+                <li class="social-drop-down-list__item">
+                    <div class="social-icon-list__item">
+                        <i class="fa fa-youtube"></i>
+                    </div>
+                </li>
+
+                <li class="social-drop-down-list__item">
+                    <div class="social-icon-list__item">
+                        <i class="fa fa-instagram"></i>
+                    </div>
+                </li>
+
+                <li class="social-drop-down-list__item">
+                    <div class="social-icon-list__item">
+                        <i class="fa fa-google-plus"></i>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function() {
+        $(".social-drop-down-list").fadeOut(0);
+
+        $(window).on('resize', function () {
+            if ($(window).width() > 992) {
+                var icon = $(".social-droplist-opening-button").find("i");
+
+                $(".social-drop-down-list").fadeOut(0);
+                $(".social-drop-down-list").removeClass("opening");
+
+                if(icon.hasClass("fa-sort-up fa-sort-up-margin-top")) {
+                    icon.removeClass("fa-sort-up fa-sort-up-margin-top");
+                }
+                icon.addClass("fa-sort-down");
+            }
+        });
+    });
+
+    $(".social-droplist-opening-button").on("click", function(){
+        var droplist = $(".social-drop-down-list");
+        var icon = $(".social-droplist-opening-button").find("i");
+
+        if(droplist.hasClass("opening")){
+            droplist.removeClass("opening");
+            icon.removeClass("fa-sort-up fa-sort-up-margin-top");
+            icon.addClass("fa-sort-down");
+            droplist.fadeOut(100);
+        } else {
+            droplist.addClass("opening");
+            icon.removeClass("fa-sort-down");
+            icon.addClass("fa-sort-up fa-sort-up-margin-top");
+            droplist.fadeIn(100);
+        }
+    })
+</script>
 
         <div class="home-main-container container">
             <div class="home-red-box-wrapper">
@@ -98,7 +172,51 @@
 
 <div class="home-footer-container">
     <div class="home-footer-wrapper container">
+        <div class="home-footer-list-links">
+            <p class="list-links__title">Veritas nesio</p>
+            <ul class="list-links__content">
+                <li>Lorem ipsum dolores</li>
+                <li>Menna penna</li>
+                <li>Mesta malum de</li>
+                <li>Ipsum lorem</li>
+            </ul>
+        </div>
 
+        <div class="home-footer-list-links">
+            <p class="list-links__title">Lorem ipsum</p>
+            <ul class="list-links__content">
+                <li>Lorem ipsum dolores</li>
+                <li>Menna penna</li>
+                <li>Mesta malum de</li>
+                <li>Ipsum lorem</li>
+            </ul>
+        </div>
+
+        <div class="home-footer-social">
+            <p class="list-links__title">Folg os pa:</p>
+
+            <div class="social-icon__wrapper">
+                <div class="social-icon__icon">
+                    <i class="fa fa-facebook"></i>
+                </div>
+                <span> Facebook</span>
+            </div>
+            
+            <div class="social-icon__wrapper">
+                <div class="social-icon__icon">
+                    <i class="fa fa-twitter"></i>
+                </div>
+                <span> Twitter</span>
+            </div>
+        </div>
+
+        <div class="home-footer-email">
+            <p class="list-links__title">Fa vores nyhedsbrev:</p>
+        </div>
+
+        <div class="home-footer-copyright">
+            <p class="list-links__content">Copyright © 2015 Kobenhavn Hoteller </p>
+        </div>
     </div>
 </div>
     </div>

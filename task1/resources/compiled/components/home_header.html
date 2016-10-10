@@ -85,9 +85,83 @@
                     <i class="fa fa-google-plus"></i>
                 </div>
             </div>
+
+            <!-- Mobile -->
+            <a class="social-droplist-opening-button">
+                <span>Del pa</span> <i class="fa fa-sort-down"></i>
+            </a>
+
+            <ul class="social-drop-down-list">
+                <li class="social-drop-down-list__item">
+                    <div class="social-icon-list__item">
+                        <i class="fa fa-facebook"></i>
+                    </div>
+                </li>
+
+                <li class="social-drop-down-list__item">
+                    <div class="social-icon-list__item">
+                        <i class="fa fa-twitter"></i>
+                    </div>
+                </li>
+
+                <li class="social-drop-down-list__item">
+                    <div class="social-icon-list__item">
+                        <i class="fa fa-youtube"></i>
+                    </div>
+                </li>
+
+                <li class="social-drop-down-list__item">
+                    <div class="social-icon-list__item">
+                        <i class="fa fa-instagram"></i>
+                    </div>
+                </li>
+
+                <li class="social-drop-down-list__item">
+                    <div class="social-icon-list__item">
+                        <i class="fa fa-google-plus"></i>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function() {
+        $(".social-drop-down-list").fadeOut(0);
+
+        $(window).on('resize', function () {
+            if ($(window).width() > 992) {
+                var icon = $(".social-droplist-opening-button").find("i");
+
+                $(".social-drop-down-list").fadeOut(0);
+                $(".social-drop-down-list").removeClass("opening");
+
+                if(icon.hasClass("fa-sort-up fa-sort-up-margin-top")) {
+                    icon.removeClass("fa-sort-up fa-sort-up-margin-top");
+                }
+                icon.addClass("fa-sort-down");
+            }
+        });
+    });
+
+    $(".social-droplist-opening-button").on("click", function(){
+        var droplist = $(".social-drop-down-list");
+        var icon = $(".social-droplist-opening-button").find("i");
+
+        if(droplist.hasClass("opening")){
+            droplist.removeClass("opening");
+            icon.removeClass("fa-sort-up fa-sort-up-margin-top");
+            icon.addClass("fa-sort-down");
+            droplist.fadeOut(100);
+        } else {
+            droplist.addClass("opening");
+            icon.removeClass("fa-sort-down");
+            icon.addClass("fa-sort-up fa-sort-up-margin-top");
+            droplist.fadeIn(100);
+        }
+    })
+</script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
