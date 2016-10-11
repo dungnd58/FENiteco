@@ -1,3 +1,7 @@
+html {
+    background-color: $WHITE;
+}
+
 .home-header-container {
     background-color: $WHITE;
 
@@ -43,7 +47,7 @@
                 }
 
                 span:nth-child(3){
-                    font-size: 19PX;
+                    font-size: 19px;
                     color: $GRAY;
                     font-style: italic;
                 }
@@ -74,7 +78,7 @@
             position: relative;
 
             span {
-                font-size: 16PX;
+                font-size: 16px;
                 color: $GRAY;
             }
 
@@ -96,6 +100,7 @@
             }
 
             .social-droplist-opening-button {
+                cursor: pointer;
                 text-decoration: none;
                 display: none;
                 width: 90px;
@@ -169,10 +174,6 @@
 
                 .social-droplist-opening-button {
                     display: inline-block;
-                }
-
-                .social-drop-down-list {
-                    display: block;
                 }
             }
         }

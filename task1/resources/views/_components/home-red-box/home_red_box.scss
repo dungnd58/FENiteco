@@ -92,4 +92,15 @@
             font-size: 20.5px;
         }
     }
+
+    @media (max-width: $SMALL_PHONE){
+        .home-red-box__title {
+            font-size: 24px;
+            width: 90%;
+        }
+
+        .home-red-box__details {
+            font-size: 18.5px;
+        }
+    }
 }
