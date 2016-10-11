@@ -2302,7 +2302,8 @@ html {
     height: 100%;
     text-align: center;
     color: #333333;
-    font-size: 15px; }
+    font-size: 15px;
+    padding: 15px 20px; }
     .home-footer-container .home-footer-wrapper .home-footer-list-links, .home-footer-container .home-footer-wrapper .home-footer-social, .home-footer-container .home-footer-wrapper .home-footer-email {
       display: inline-block;
       text-align: left; }
@@ -2501,8 +2502,97 @@ html {
   color: #333333;
   width: 30%;
   min-height: 250px;
-  box-shadow: 1px 1px 1px 1px #908D8D;
-  float: left; }
+  box-shadow: 1px 1px 1px 1px rgba(144, 141, 141, 0.4);
+  float: left;
+  font-size: 15px;
+  font-weight: 300; }
+  .home-search-form-wrapper .search-form-drop-list {
+    background-color: rgba(242, 242, 242, 0.5);
+    width: 100%;
+    height: 35px;
+    margin-bottom: 12px;
+    border-color: buttonface; }
+  .home-search-form-wrapper .search-form-input-title {
+    font-size: 15px;
+    font-weight: 700; }
+  .home-search-form-wrapper .home-search-form {
+    padding: 20px 25px;
+    position: relative; }
+    .home-search-form-wrapper .home-search-form p {
+      margin: 3px 0 !important; }
+    .home-search-form-wrapper .home-search-form .search-form__location-drop-list {
+      margin-bottom: 10px; }
+    .home-search-form-wrapper .home-search-form .search-form__calender-boxs {
+      margin-bottom: 25px;
+      margin-top: 40px; }
+      .home-search-form-wrapper .home-search-form .search-form__calender-boxs .calender-boxs__items {
+        margin-bottom: 5px; }
+        .home-search-form-wrapper .home-search-form .search-form__calender-boxs .calender-boxs__items .calender-box__content {
+          width: 100%;
+          height: 35px;
+          border: 1px solid #B2B2B2; }
+    .home-search-form-wrapper .home-search-form .search-form__number-drop-lists {
+      margin-bottom: 10px; }
+      .home-search-form-wrapper .home-search-form .search-form__number-drop-lists .number-drop-lists__items .search-form-input-title {
+        min-width: 150px;
+        display: inline-block; }
+      .home-search-form-wrapper .home-search-form .search-form__number-drop-lists .number-drop-lists__items .search-form-drop-list {
+        width: 50px;
+        text-align: center;
+        padding-left: 13px; }
+    .home-search-form-wrapper .home-search-form .search-form__check-box {
+      line-height: 2;
+      position: absolute;
+      top: 140px; }
+      .home-search-form-wrapper .home-search-form .search-form__check-box .search-form-check-box {
+        display: none; }
+      .home-search-form-wrapper .home-search-form .search-form__check-box label {
+        display: inline-block;
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        border-radius: 1px;
+        border: 1px solid #B2B2B2;
+        margin: 0;
+        transition: all 200ms ease; }
+      .home-search-form-wrapper .home-search-form .search-form__check-box span {
+        font-size: 14px;
+        font-weight: 100;
+        margin: 0 5px;
+        position: relative;
+        top: -3px; }
+    .home-search-form-wrapper .home-search-form .search-form__sog-button .sog-button {
+      width: 100%;
+      height: 40px;
+      text-align: center;
+      color: #fff;
+      background-color: #0685C5;
+      font-weight: 700;
+      font-size: 20px;
+      border: 0; }
+      .home-search-form-wrapper .home-search-form .search-form__sog-button .sog-button:hover {
+        background-color: #20b0f8; }
+    @media (max-width: 992px) {
+      .home-search-form-wrapper .home-search-form {
+        padding-bottom: 40px; }
+        .home-search-form-wrapper .home-search-form .search-form__location-drop-list .search-form-drop-list, .home-search-form-wrapper .home-search-form .search-form__location-drop-list .calender-boxs__items, .home-search-form-wrapper .home-search-form .search-form__location-drop-list .number-drop-lists__items, .home-search-form-wrapper .home-search-form .search-form__calender-boxs .search-form-drop-list, .home-search-form-wrapper .home-search-form .search-form__calender-boxs .calender-boxs__items, .home-search-form-wrapper .home-search-form .search-form__calender-boxs .number-drop-lists__items, .home-search-form-wrapper .home-search-form .search-form__number-drop-lists .search-form-drop-list, .home-search-form-wrapper .home-search-form .search-form__number-drop-lists .calender-boxs__items, .home-search-form-wrapper .home-search-form .search-form__number-drop-lists .number-drop-lists__items {
+          width: 43%;
+          display: inline-block; }
+        .home-search-form-wrapper .home-search-form .search-form__location-drop-list .search-form-drop-list:nth-child(3), .home-search-form-wrapper .home-search-form .search-form__calender-boxs .search-form-drop-list:nth-child(3), .home-search-form-wrapper .home-search-form .search-form__number-drop-lists .search-form-drop-list:nth-child(3) {
+          margin-left: 10%; }
+        .home-search-form-wrapper .home-search-form .search-form__location-drop-list .number-drop-lists__items:nth-child(2), .home-search-form-wrapper .home-search-form .search-form__location-drop-list .calender-boxs__items:nth-child(2), .home-search-form-wrapper .home-search-form .search-form__calender-boxs .number-drop-lists__items:nth-child(2), .home-search-form-wrapper .home-search-form .search-form__calender-boxs .calender-boxs__items:nth-child(2), .home-search-form-wrapper .home-search-form .search-form__number-drop-lists .number-drop-lists__items:nth-child(2), .home-search-form-wrapper .home-search-form .search-form__number-drop-lists .calender-boxs__items:nth-child(2) {
+          margin-left: 10%; }
+        .home-search-form-wrapper .home-search-form .search-form__calender-boxs {
+          margin-top: 0; }
+        .home-search-form-wrapper .home-search-form .search-form__check-box {
+          position: static;
+          top: 0;
+          width: 43%;
+          display: inline-block; }
+        .home-search-form-wrapper .home-search-form .search-form__sog-button {
+          width: 43%;
+          margin-left: 10%;
+          display: inline-block; } }
   @media (max-width: 992px) {
     .home-search-form-wrapper {
       margin-top: 50px;

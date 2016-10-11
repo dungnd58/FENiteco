@@ -3,8 +3,158 @@
     color: $DARK_GRAY_TEXT;
     width: 30%;
     min-height: 250px;
-    box-shadow: 1px 1px 1px 1px $GRAY;
+    box-shadow: 1px 1px 1px 1px rgba(144, 141, 141, 0.4);
     float: left;
+    font-size: 15px;
+    font-weight: 300;
+
+    .search-form-drop-list {
+        background-color: rgba(242, 242, 242, 0.5);
+        width: 100%;
+        height: 35px;
+        margin-bottom: 12px;
+        border-color: buttonface;
+    }
+
+    .search-form-input-title {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .home-search-form {
+        padding: 20px 25px;
+        position: relative;
+
+        p {
+            margin: 3px 0 !important; 
+        }
+
+        .search-form__location-drop-list {
+            margin-bottom: 10px;
+        }
+
+        .search-form__calender-boxs {
+            margin-bottom: 25px;
+            margin-top: 40px;
+
+            .calender-boxs__items {
+                margin-bottom: 5px;
+            
+                .calender-box__content {
+                    width: 100%;
+                    height: 35px;
+                    border: 1px solid $GRAY_ICON;
+                }
+            }
+        }
+
+        .search-form__number-drop-lists {
+            margin-bottom: 10px;
+
+            .number-drop-lists__items {
+
+                .search-form-input-title {
+                    min-width: 150px;
+                    display: inline-block;
+                }
+
+                .search-form-drop-list {
+                    width: 50px;
+                    text-align: center;
+                    padding-left: 13px;
+                }
+            }
+        }
+
+        .search-form__check-box {
+            line-height: 2;
+            position: absolute;
+            top: 140px;
+
+            .search-form-check-box {
+                display: none;
+            }
+
+            label {
+                display: inline-block;
+                cursor: pointer;
+                width: 16px;
+                height: 16px;
+                border-radius: 1px;
+                border: 1px solid $GRAY_ICON;
+                margin: 0;
+
+                transition: all 200ms ease;
+            }
+
+            span {
+                font-size: 14px;
+                font-weight: 100;
+                margin: 0 5px;
+                position: relative;
+                top: -3px;
+            }
+        }
+
+        .search-form__sog-button {
+            
+            .sog-button {
+                width: 100%;
+                height: 40px;
+                text-align: center;
+                color: #fff;
+                background-color: $OCEAN_BLUE;
+                font-weight: 700;
+                font-size: 20px;
+                border: 0;
+                
+                &:hover {
+                    background-color: $OCEAN_BLUE_LIGHTER;
+                }
+            }
+        }
+
+        @media (max-width: $TABLET){
+            padding-bottom: 40px;
+            
+            .search-form__location-drop-list, .search-form__calender-boxs, .search-form__number-drop-lists {
+
+                .search-form-drop-list, .calender-boxs__items, .number-drop-lists__items {
+                    width: 43%;
+                    display: inline-block;
+                }
+
+                .search-form-drop-list {
+                    &:nth-child(3) {
+                        margin-left: 10%;
+                    }
+                }
+
+                .number-drop-lists__items, .calender-boxs__items {
+                    &:nth-child(2) {
+                        margin-left: 10%;
+                    }
+                }
+            }
+
+            .search-form__calender-boxs {
+                margin-top: 0;
+            }
+
+            .search-form__check-box {
+                position: static;
+                top: 0;
+                width: 43%;
+                display: inline-block;
+            }
+
+            .search-form__sog-button {
+                width: 43%;
+                margin-left: 10%;
+                display: inline-block;
+            }
+        }
+    }
 
     @media (max-width: $TABLET){
         margin-top: 50px;
