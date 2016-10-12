@@ -48,6 +48,12 @@
 
     <div class="home-search-form-wrapper">
 
+    <div class="home-search-toggle-button">
+        <i class="fa fa-sort-down"></i>
+
+        <span>SOG EFTER HOTEL HER</span>
+    </div>
+
     <form class="home-search-form">
         <div class="search-form__location-drop-list">
             <p class="search-form-input-title">
@@ -158,10 +164,31 @@
 
 
 <script>
+    $(document).ready(function(){
+        $(window).on('resize', function () {
+            if ($(window).width() <= 480) {
+                $(".home-search-form").hide();
+            } else {
+                $(".home-search-form").show();
+            }
+
+            if ($(window).width() > 992) {
+                $(".home-search-form-wrapper").off("click", ".home-search-toggle-button", toggleFunc);
+            } else {
+                
+            }
+        });
+    })
+
+    function toggleFunc() {
+        $(".home-search-form").toggle(200);
+    }
+
+    $(".home-search-toggle-button").on('tab click', toggleFunc);
+
     $("#check-box-label").on('tab click', function(){
         if($(".search-form-check-box").is(':checked')){
             $(this).find('i').fadeOut(100);
-
         } else {
             $(this).find('i').fadeIn(100);
         }
