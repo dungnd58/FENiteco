@@ -145,8 +145,10 @@
     })
 </script>
 
-        <div class="home-main-container container">
-            <div class="home-red-box-wrapper">
+        <div class="home-background-gradient">
+        
+            <div class="home-main-container container">
+                <div class="home-red-box-wrapper">
     <div class="home-red-box__title">
         BOOK DIT HOTEL I KOBENHAVN HER!
     </div>
@@ -159,7 +161,7 @@
         <i class="fa fa-close" aria-hidden="true"></i>
     </div>
 </div>
-            <div class="home-search-form-wrapper">
+                <div class="home-search-form-wrapper">
 
     <div class="home-search-toggle-button">
         <i class="fa fa-sort-down"></i>
@@ -284,17 +286,26 @@
             } else {
                 $(".home-search-form").show();
             }
-
-            if ($(window).width() > 992) {
-                $(".home-search-form-wrapper").off("click", ".home-search-toggle-button", toggleFunc);
-            } else {
-                
-            }
         });
+
+        if ($(window).width() <= 480) {
+            $(".home-search-form").hide();
+        } else {
+            $(".home-search-form").show();
+        }
     })
 
     function toggleFunc() {
         $(".home-search-form").toggle(200);
+
+        if($(window).width() > 992){
+            if($(".home-hotel-links-wrapper").css("margin-top") == "20px"){
+                $(".home-hotel-links-wrapper").css("margin-top",-200);
+            } 
+            else if($(".home-hotel-links-wrapper").css("margin-top") == "-200px") {
+                $(".home-hotel-links-wrapper").css("margin-top",20);
+            }
+        }
     }
 
     $(".home-search-toggle-button").on('tab click', toggleFunc);
@@ -307,10 +318,12 @@
         }
     })
 </script>
-            <div class="home-main-content-wrapper">
+                <div class="home-main-content-wrapper">
 </div>
-            <div class="home-hotel-links-wrapper">
+                <div class="home-hotel-links-wrapper">
 </div>
+            </div>
+        
         </div>
         
         <div class="space-clear"></div>

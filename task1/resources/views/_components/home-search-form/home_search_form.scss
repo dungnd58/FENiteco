@@ -24,7 +24,7 @@
         width: 100%;
         color: $DARK_GRAY_TEXT;
         font-weight: 700;
-        font-size: 19px;
+        font-size: 16px;
         height: 55px;
         padding: 15px 25px;
         background: linear-gradient(white, $LIGHT_GRAY_TEXT);
@@ -42,20 +42,26 @@
         span {
             display: inline-block;
             position: relative;
-            left: 35px;
+            left: 33px;
+            top: 3px;
         }
 
         @media (max-width: $TABLET) {
+            font-size: 19px;
+
             i {
                 left: 40px;
             }
             
             span {
                 left: 45px;
+                top: 0;
             }
         }
 
         @media (max-width: $SMALL_PHONE) {
+            font-size: 19px;
+
             i {
                 left: 20px;
             }

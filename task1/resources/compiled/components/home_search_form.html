@@ -171,17 +171,26 @@
             } else {
                 $(".home-search-form").show();
             }
-
-            if ($(window).width() > 992) {
-                $(".home-search-form-wrapper").off("click", ".home-search-toggle-button", toggleFunc);
-            } else {
-                
-            }
         });
+
+        if ($(window).width() <= 480) {
+            $(".home-search-form").hide();
+        } else {
+            $(".home-search-form").show();
+        }
     })
 
     function toggleFunc() {
         $(".home-search-form").toggle(200);
+
+        if($(window).width() > 992){
+            if($(".home-hotel-links-wrapper").css("margin-top") == "20px"){
+                $(".home-hotel-links-wrapper").css("margin-top",-200);
+            } 
+            else if($(".home-hotel-links-wrapper").css("margin-top") == "-200px") {
+                $(".home-hotel-links-wrapper").css("margin-top",20);
+            }
+        }
     }
 
     $(".home-search-toggle-button").on('tab click', toggleFunc);
