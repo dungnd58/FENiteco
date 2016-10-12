@@ -187,7 +187,13 @@
                 </p>
 
                 <div class="calender-box__content">
-                    
+                    <div class="box-content__details">
+                        28, December 2016
+                    </div>
+
+                    <div class="box-content__icon">
+                        <img src="/public/img/calendar_icon.png">
+                    </div>
                 </div>
             </div>
             
@@ -197,7 +203,13 @@
                 </p>
 
                 <div class="calender-box__content">
-                    
+                    <div class="box-content__details">
+                        28, December 2016
+                    </div>
+
+                    <div class="box-content__icon">
+                        <img src="/public/img/calendar_icon.png">
+                    </div>
                 </div>
             </div>
         </div>
@@ -245,8 +257,8 @@
         </div>
 
         <div class="search-form__check-box">
-            <input type="checkbox" id="sog-uden-dato" class="search-form-check-box" name="sog-uden-dato" />
-            <label for="sog-uden-dato"></label>
+            <input type="checkbox" id="sog-uden-dato" class="search-form-check-box" name="sog-uden-dato"/>
+            <label id="check-box-label" for="sog-uden-dato"><i class="fa fa-check" aria-hidden="true"></i></label>
             <span> Sog uden dato</span>
         </div>
 
@@ -256,6 +268,18 @@
     </form>
     
 </div>
+
+
+<script>
+    $("#check-box-label").on('tab click', function(){
+        if($(".search-form-check-box").is(':checked')){
+            $(this).find('i').fadeOut(100);
+
+        } else {
+            $(this).find('i').fadeIn(100);
+        }
+    })
+</script>
             <div class="home-main-content-wrapper">
 </div>
             <div class="home-hotel-links-wrapper">

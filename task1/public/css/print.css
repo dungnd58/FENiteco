@@ -2522,15 +2522,31 @@ html {
       margin: 3px 0 !important; }
     .home-search-form-wrapper .home-search-form .search-form__location-drop-list {
       margin-bottom: 10px; }
+      .home-search-form-wrapper .home-search-form .search-form__location-drop-list .search-form-drop-list {
+        padding: 0 12px; }
     .home-search-form-wrapper .home-search-form .search-form__calender-boxs {
       margin-bottom: 25px;
       margin-top: 40px; }
       .home-search-form-wrapper .home-search-form .search-form__calender-boxs .calender-boxs__items {
-        margin-bottom: 5px; }
+        margin-bottom: 10px; }
         .home-search-form-wrapper .home-search-form .search-form__calender-boxs .calender-boxs__items .calender-box__content {
           width: 100%;
           height: 35px;
+          line-height: 2;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
           border: 1px solid #B2B2B2; }
+          .home-search-form-wrapper .home-search-form .search-form__calender-boxs .calender-boxs__items .calender-box__content .box-content__details {
+            padding: 0 15px;
+            flex: 1;
+            height: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; }
+          .home-search-form-wrapper .home-search-form .search-form__calender-boxs .calender-boxs__items .calender-box__content .box-content__icon img {
+            height: 25px;
+            padding-right: 10px; }
     .home-search-form-wrapper .home-search-form .search-form__number-drop-lists {
       margin-bottom: 10px; }
       .home-search-form-wrapper .home-search-form .search-form__number-drop-lists .number-drop-lists__items .search-form-input-title {
@@ -2541,7 +2557,6 @@ html {
         text-align: center;
         padding-left: 13px; }
     .home-search-form-wrapper .home-search-form .search-form__check-box {
-      line-height: 2;
       position: absolute;
       top: 140px; }
       .home-search-form-wrapper .home-search-form .search-form__check-box .search-form-check-box {
@@ -2555,6 +2570,10 @@ html {
         border: 1px solid #B2B2B2;
         margin: 0;
         transition: all 200ms ease; }
+        .home-search-form-wrapper .home-search-form .search-form__check-box label i {
+          display: none;
+          position: relative;
+          top: -4px; }
       .home-search-form-wrapper .home-search-form .search-form__check-box span {
         font-size: 14px;
         font-weight: 100;
@@ -2574,6 +2593,7 @@ html {
         background-color: #20b0f8; }
     @media (max-width: 992px) {
       .home-search-form-wrapper .home-search-form {
+        padding-left: 40px;
         padding-bottom: 40px; }
         .home-search-form-wrapper .home-search-form .search-form__location-drop-list .search-form-drop-list, .home-search-form-wrapper .home-search-form .search-form__location-drop-list .calender-boxs__items, .home-search-form-wrapper .home-search-form .search-form__location-drop-list .number-drop-lists__items, .home-search-form-wrapper .home-search-form .search-form__calender-boxs .search-form-drop-list, .home-search-form-wrapper .home-search-form .search-form__calender-boxs .calender-boxs__items, .home-search-form-wrapper .home-search-form .search-form__calender-boxs .number-drop-lists__items, .home-search-form-wrapper .home-search-form .search-form__number-drop-lists .search-form-drop-list, .home-search-form-wrapper .home-search-form .search-form__number-drop-lists .calender-boxs__items, .home-search-form-wrapper .home-search-form .search-form__number-drop-lists .number-drop-lists__items {
           width: 43%;
@@ -2593,6 +2613,27 @@ html {
           width: 43%;
           margin-left: 10%;
           display: inline-block; } }
+    @media (max-width: 480px) {
+      .home-search-form-wrapper .home-search-form {
+        padding: 20px; }
+        .home-search-form-wrapper .home-search-form .search-form__location-drop-list .search-form-drop-list, .home-search-form-wrapper .home-search-form .search-form__location-drop-list .calender-boxs__items, .home-search-form-wrapper .home-search-form .search-form__calender-boxs .search-form-drop-list, .home-search-form-wrapper .home-search-form .search-form__calender-boxs .calender-boxs__items, .home-search-form-wrapper .home-search-form .search-form__number-drop-lists .search-form-drop-list, .home-search-form-wrapper .home-search-form .search-form__number-drop-lists .calender-boxs__items {
+          width: 100%; }
+        .home-search-form-wrapper .home-search-form .search-form__location-drop-list .search-form-drop-list:nth-child(3), .home-search-form-wrapper .home-search-form .search-form__calender-boxs .search-form-drop-list:nth-child(3), .home-search-form-wrapper .home-search-form .search-form__number-drop-lists .search-form-drop-list:nth-child(3) {
+          margin-left: 0; }
+        .home-search-form-wrapper .home-search-form .search-form__location-drop-list .calender-boxs__items:nth-child(2), .home-search-form-wrapper .home-search-form .search-form__calender-boxs .calender-boxs__items:nth-child(2), .home-search-form-wrapper .home-search-form .search-form__number-drop-lists .calender-boxs__items:nth-child(2) {
+          margin-left: 0; }
+        .home-search-form-wrapper .home-search-form .search-form__calender-boxs {
+          margin-top: 0; }
+        .home-search-form-wrapper .home-search-form .search-form__number-drop-lists {
+          margin-top: 55px; }
+          .home-search-form-wrapper .home-search-form .search-form__number-drop-lists .search-form-drop-list {
+            margin-top: 10px; }
+        .home-search-form-wrapper .home-search-form .search-form__check-box {
+          position: absolute;
+          top: 310px; }
+        .home-search-form-wrapper .home-search-form .search-form__sog-button {
+          width: 100%;
+          margin: 5px auto; } }
   @media (max-width: 992px) {
     .home-search-form-wrapper {
       margin-top: 50px;
