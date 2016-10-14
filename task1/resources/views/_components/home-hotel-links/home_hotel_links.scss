@@ -1,13 +1,103 @@
 .home-hotel-links-wrapper {
     width: 30%;
-    min-height: 250px;
-    background-color: $WHITE;
     color: $DARK_GRAY_TEXT;
     float: left;
     clear: left;
     margin-top: 20px;
+    position: relative;
+
+    .home-hotel-links__lidt-om-sitet {
+        border: 1px solid $GRAY_ICON;
+        color: $DARK_GRAY_TEXT;
+        font-size: 15px;
+        padding: 25px;
+
+        .lidt-om-sitet__title {
+            font-weight: 700;
+        }
+
+        .lidt-om-sitet__content {
+            font-weight: 300;
+        }
+    }
+
+    .home-hotel-links-box {
+        width: 100%;
+        font-size: 15px;
+        background: $WHITE;
+        margin-top: 35px;
+        
+        .hotel-links-box__title, .hotel-links-box__content .hotel-links__item {
+            border-bottom: 1px solid $LIGHT_GRAY_BORDER;
+            min-height: 41px;
+            padding: 10px 20px;
+        }
+
+        .hotel-links-box__title {
+            color: $DARK_GRAY_TEXT;
+            font-weight: 700;
+            background: linear-gradient($WHITE, $LIGHT_GRAY_TEXT);
+        }
+
+        .hotel-links-box__content {
+            color: $OCEAN_BLUE;
+            font-weight: 300;
+            padding: 0;
+            margin-bottom: 0;
+            
+            .hotel-links__item {
+                cursor: pointer;
+                list-style-type: none;
+
+                i {
+                    font-size: 8px;
+                    color: $GRAY;
+                    position: relative;
+                    top: -3px;
+                    margin-right: 5px;
+                }
+
+                a {
+                    &:hover {
+                        color: $OCEAN_BLUE;
+                    }
+                }
+            }
+        }
+    }
 
     @media (max-width: $TABLET){
+        margin-top: 40px;
+
+        .home-hotel-links-box {
+            width: 48%;
+
+            &:nth-child(2) {
+                float: right;
+            }
+
+            &:nth-child(3) {
+                float: left;
+            }
+        }
+
+        width: 100%;
+        float: none;
+        clear: both;
+    }
+
+    @media (max-width: $PHONE){
+        margin-bottom: 100px;
+
+        .home-hotel-links__lidt-om-sitet {
+            margin-top: -15px;
+        }
+        
+        .home-hotel-links-box {
+            width: 100%;
+            margin-top: 25px;
+        }
+
         width: 100%;
         float: none;
         clear: both;

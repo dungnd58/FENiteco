@@ -1,0 +1,63 @@
+{
+    "items": [
+        {
+            "title": "Inspiration:",
+            "links": [
+                {
+                    "title":  "Hotell Kopenhamn"
+                },
+                {
+                    "title":  "Hoteller"
+                },
+                {
+                    "title":  "Hotel Berlin"
+                },
+                {
+                    "title":  "Sommerhuse i Danmark"
+                },
+                {
+                    "title":  "Hoteller Arhus"
+                },
+                {
+                    "title":  "Hoteller Odense"
+                }
+            ]
+        },
+
+        {
+            "title": "Overnatning Kobenhavn",
+            "links": [
+                {
+                    "title": "Hoteller Kobenhavn"
+                },
+                {
+                    "title":  "Hotell Kobenhavn centrum"
+                },
+                {
+                    "title":  "Hotell Vesterbro"
+                },
+                {
+                    "title":  "Hotel Norrebro"
+                },
+                {
+                    "title":  "Hotel Amager"
+                },
+                {
+                    "title":  "Hotel Osterbro"
+                },
+                {
+                    "title":  "Hotel Amager"
+                },
+                {
+                    "title":  "Hotel Osterbro"
+                },
+                {
+                    "title":  "Hotel tilbud Kobenhavn"
+                },
+                {
+                    "title":  "Billige hoteller Kobenhavn"
+                }
+            ]
+        }
+    ]
+}

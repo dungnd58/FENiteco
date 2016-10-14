@@ -1,2 +1,23 @@
 <div class="home-hotel-links-wrapper">
+    <div class="home-hotel-links__lidt-om-sitet">
+        <p class="lidt-om-sitet__title">Lidt om sitet</p>
+        <p class="lidt-om-sitet__content">Viser hurtigt og nemt en hoteloversigt over overnatningsmuligheder i Kobenhavn</p>
+    </div>
+
+    {{#each home_hotel_links.items}}
+    <div class="home-hotel-links-box">
+        <div class="hotel-links-box__title">
+            <span>{{this.title}}</span>
+        </div>
+
+        <ul class="hotel-links-box__content">
+            {{#each this.links}}
+            <li class="hotel-links__item">
+                <i class="fa fa-square"></i>
+                <a>{{title}}</a>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    {{/each}}
 </div>

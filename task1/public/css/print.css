@@ -2421,9 +2421,6 @@ html {
         width: 45%;
         padding-left: 15px; } }
 
-.home-main-container {
-  letter-spacing: 1px; }
-
 .home-red-box-wrapper {
   min-height: 100px;
   width: 67%;
@@ -2493,7 +2490,7 @@ html {
   background-color: #FFF;
   color: #333333;
   width: 30%;
-  box-shadow: 1px 1px 1px 1px rgba(144, 141, 141, 0.4);
+  box-shadow: 1px 1px 1px 1px rgba(144, 141, 141, 0.2);
   float: left;
   font-size: 15px;
   font-weight: 300; }
@@ -2670,11 +2667,40 @@ html {
 
 .home-background-gradient {
   width: 100%;
-  background: url("/public/img/bg_1.jpg");
-  background-repeat: no-repeat;
-  background-position: fixed;
-  background-size: cover;
-  padding: 80px 0; }
+  padding: 80px 0;
+  position: relative; }
+  .home-background-gradient .home-background__item {
+    background-image: url("/public/img/bg_2.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 30vh;
+    position: absolute; }
+    .home-background-gradient .home-background__item:nth-child(1) {
+      top: 0; }
+      .home-background-gradient .home-background__item:nth-child(1):before {
+        background: -webkit-linear-gradient(rgba(239, 239, 239, 0) 30%, rgba(239, 239, 239, 0.5) 60%, #efefef 80%);
+        background: -o-linear-gradient(rgba(239, 239, 239, 0) 30%, rgba(239, 239, 239, 0.5) 60%, #efefef 80%);
+        background: linear-gradient(rgba(239, 239, 239, 0) 30%, rgba(239, 239, 239, 0.5) 60%, #efefef 80%);
+        content: " ";
+        width: 100%;
+        height: 35vh;
+        position: absolute; }
+    .home-background-gradient .home-background__item:nth-child(2) {
+      bottom: 0; }
+      .home-background-gradient .home-background__item:nth-child(2):before {
+        background: -webkit-linear-gradient(#efefef 20%, rgba(239, 239, 239, 0.6) 60%, rgba(239, 239, 239, 0) 80%);
+        background: -o-linear-gradient(#efefef 20%, rgba(239, 239, 239, 0.6) 60%, rgba(239, 239, 239, 0) 80%);
+        background: linear-gradient(#efefef 20%, rgba(239, 239, 239, 0.6) 60%, rgba(239, 239, 239, 0) 80%);
+        content: " ";
+        width: 100%;
+        height: 25vh;
+        top: -5vh;
+        position: absolute; }
+  .home-background-gradient .home-main-container {
+    letter-spacing: 1px;
+    z-index: 2;
+    position: relative; }
   @media (max-width: 992px) {
     .home-background-gradient {
       padding-top: 50px 0; } }
@@ -2689,7 +2715,8 @@ html {
   color: #333333;
   float: right;
   clear: right;
-  margin-top: 45px; }
+  margin-top: 45px;
+  position: relative; }
   @media (max-width: 992px) {
     .home-main-content-wrapper {
       width: 100%;
@@ -2698,16 +2725,71 @@ html {
 
 .home-hotel-links-wrapper {
   width: 30%;
-  min-height: 250px;
-  background-color: #FFF;
   color: #333333;
   float: left;
   clear: left;
-  margin-top: 20px; }
+  margin-top: 20px;
+  position: relative; }
+  .home-hotel-links-wrapper .home-hotel-links__lidt-om-sitet {
+    border: 1px solid #B2B2B2;
+    color: #333333;
+    font-size: 15px;
+    padding: 25px; }
+    .home-hotel-links-wrapper .home-hotel-links__lidt-om-sitet .lidt-om-sitet__title {
+      font-weight: 700; }
+    .home-hotel-links-wrapper .home-hotel-links__lidt-om-sitet .lidt-om-sitet__content {
+      font-weight: 300; }
+  .home-hotel-links-wrapper .home-hotel-links-box {
+    width: 100%;
+    font-size: 15px;
+    background: #FFF;
+    margin-top: 35px; }
+    .home-hotel-links-wrapper .home-hotel-links-box .hotel-links-box__title, .home-hotel-links-wrapper .home-hotel-links-box .hotel-links-box__content .hotel-links__item {
+      border-bottom: 1px solid #e6e6e6;
+      min-height: 41px;
+      padding: 10px 20px; }
+    .home-hotel-links-wrapper .home-hotel-links-box .hotel-links-box__title {
+      color: #333333;
+      font-weight: 700;
+      background: linear-gradient(#FFF, #F2F2F2); }
+    .home-hotel-links-wrapper .home-hotel-links-box .hotel-links-box__content {
+      color: #0685C5;
+      font-weight: 300;
+      padding: 0;
+      margin-bottom: 0; }
+      .home-hotel-links-wrapper .home-hotel-links-box .hotel-links-box__content .hotel-links__item {
+        cursor: pointer;
+        list-style-type: none; }
+        .home-hotel-links-wrapper .home-hotel-links-box .hotel-links-box__content .hotel-links__item i {
+          font-size: 8px;
+          color: #908D8D;
+          position: relative;
+          top: -3px;
+          margin-right: 5px; }
+        .home-hotel-links-wrapper .home-hotel-links-box .hotel-links-box__content .hotel-links__item a:hover {
+          color: #0685C5; }
   @media (max-width: 992px) {
     .home-hotel-links-wrapper {
+      margin-top: 40px;
       width: 100%;
       float: none;
-      clear: both; } }
+      clear: both; }
+      .home-hotel-links-wrapper .home-hotel-links-box {
+        width: 48%; }
+        .home-hotel-links-wrapper .home-hotel-links-box:nth-child(2) {
+          float: right; }
+        .home-hotel-links-wrapper .home-hotel-links-box:nth-child(3) {
+          float: left; } }
+  @media (max-width: 640px) {
+    .home-hotel-links-wrapper {
+      margin-bottom: 100px;
+      width: 100%;
+      float: none;
+      clear: both; }
+      .home-hotel-links-wrapper .home-hotel-links__lidt-om-sitet {
+        margin-top: -15px; }
+      .home-hotel-links-wrapper .home-hotel-links-box {
+        width: 100%;
+        margin-top: 25px; } }
 
 /*# sourceMappingURL=print.css.map */
