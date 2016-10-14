@@ -1,0 +1,107 @@
+.home-hoteller-tilbud-wrapper {
+    margin-bottom: 40px;
+
+    .home-hoteller-tilbud__title, .home-hoteller-tilbud__hotel-box {
+        border-bottom: 1px solid $LIGHT_GRAY_BORDER;
+        padding: 20px 35px;
+    }
+
+    .home-hoteller-tilbud__title {
+
+        .hoteller-tilbud-title__big-title, .hoteller-tilbud-title__details {
+            margin-bottom: 0;
+        }
+        
+        .hoteller-tilbud-title__big-title {
+            font-size: 25px;
+            color: $DARK_GRAY_TEXT;
+            font-weight: bold;
+        }
+
+        .hoteller-tilbud-title__details {
+            font-size: 19px;
+            color: $GRAY;
+            font-weight: 300;
+        }
+    }
+
+    .home-hoteller-tilbud__se-alle-tilbud {
+        font-weight: 500;
+        color: $OCEAN_BLUE;
+
+        &:hover {
+            color: $OCEAN_BLUE;
+        }
+    }
+
+    .home-hoteller-tilbud__hotel-box {
+        .hotel-box__image {
+            width: 187px;
+            height: 124px;
+            float: left;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .hotel-box__content {
+            margin-left: 215px;
+            height: 124px;
+            clear: right;
+
+            .hotel-box-content__details {
+                line-height: 1.3;
+                float: left;
+
+                .hotel-box-details__tilbud {
+                    font-size: 17px;
+                    font-weight: 500;
+                    color: $BROWN_RED;
+
+                    .hotel-box-details__name {
+                        font-size: 19px;
+                        font-weight: 700;
+                        color: $DARK_GRAY_TEXT;
+                    }
+
+                    .hotel-box-details__history {
+                        font-size: 16px;
+                        font-weight: 300;
+                        color: $DARK_GRAY_TEXT;
+                    }
+
+                    .home-hoteller-tilbud__se-alle-tilbud {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .hotel-box-content__book {
+                clear: right;
+                width: 30%;
+
+                .book__old-price {
+                    font-size: 16px;
+                    color: $DARK_GRAY_TEXT;
+                    font-weight: 300;
+                }
+
+                .book__new-price {
+                    font-size: 33px;
+                    color: $DARK_GRAY_TEXT;
+                    font-weight: 700;
+                }
+
+                .book__button {
+                    padding: 10px 30px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: $WHITE;
+                    background: $OCEAN_BLUE;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
