@@ -7,20 +7,31 @@
     {{#each home_hoteller_tilbud_list.items}}
     <div class="home-hoteller-tilbud__hotel-box">
         <div class="hotel-box__image">
-            <img src="{{image_desktop}}">
+            <div class="image-desktop" style="background: url('{{image_desktop}}')"></div>
+            <div class="image-mobile" style="background: url('{{image_desktop}}')"></div>
         </div>
 
         <div class="hotel-box__content">
             <div class="hotel-box-content__details">
-                <p class="hotel-box-details__tilbud">TILBUD: {{tilbud}}</p>
-                <p class="hotel-box-details__name">{{name}}</p>
+                <p class="hotel-box-details__tilbud"><span>TILBUD: {{tilbud}}</span></p>
+                <div class="hotel-box-details__name">
+                    {{name}}
+                    <div class="hotel-box-details__rating">
+                        <span>☆</span>
+                        <span>☆</span>
+                        <span>☆</span>
+                        <span>☆</span>
+                        <span>☆</span>
+                    </div>
+                </div>
+                
                 <p class="hotel-box-details__history">{{history}}</p>
                 <a class="home-hoteller-tilbud__se-alle-tilbud">Se alle tilbud <i class="fa fa-angle-double-right"></i></a>
             </div>
 
             <div class="hotel-box-content__book">
                 <p class="book-pr-overnating">PR OVERNATING</p>
-                <p class="book__old-price">DKK {{old-price}},-</p>
+                <p class="book__old-price"><span>DKK {{old-price}},-</span></p>
                 <p class="book__new-price">{{new-price}},-</p>
 
                 <a class="book__button">BOOK</a>

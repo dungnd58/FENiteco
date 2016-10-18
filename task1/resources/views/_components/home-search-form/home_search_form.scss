@@ -1,7 +1,7 @@
 .home-search-form-wrapper {
     background-color: $WHITE;
     color: $DARK_GRAY_TEXT;
-    width: 30%;
+    width: 27%;
     box-shadow: 1px 1px 1px 1px rgba(144, 141, 141, 0.2);
     float: left;
     font-size: 15px;
@@ -46,27 +46,32 @@
             top: 3px;
         }
 
-        @media (max-width: $TABLET) {
-            font-size: 19px;
+        @media (max-width: $SMALL_LAPTOP) {
+            span {
+                font-size: 14px;
+                left: 30px;
+            }
+        }
 
+        @media (max-width: $TABLET) {
             i {
                 left: 40px;
             }
             
             span {
+                font-size: 19px;
                 left: 45px;
                 top: 0;
             }
         }
 
         @media (max-width: $SMALL_PHONE) {
-            font-size: 19px;
-
             i {
                 left: 20px;
             }
 
             span {
+                font-size: 19px;
                 left: 25px;
             }
         }

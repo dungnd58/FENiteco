@@ -35,51 +35,90 @@
     }
 
     .home-hoteller-tilbud__hotel-box {
+        padding: 25px 35px;
+
         .hotel-box__image {
             width: 187px;
             height: 124px;
             float: left;
 
-            img {
+            .image-desktop {
                 width: 100%;
+                height: 100%;
+                display: block;
+            }
+
+            .image-mobile {
+                display: none;
             }
         }
 
         .hotel-box__content {
-            margin-left: 215px;
+            padding-left: 210px;
             height: 124px;
             clear: right;
 
             .hotel-box-content__details {
                 line-height: 1.3;
-                float: left;
+                width: 74.8%;
+                display: inline-block;
+
+                p {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
 
                 .hotel-box-details__tilbud {
                     font-size: 17px;
                     font-weight: 500;
                     color: $BROWN_RED;
+                }
 
-                    .hotel-box-details__name {
-                        font-size: 19px;
-                        font-weight: 700;
-                        color: $DARK_GRAY_TEXT;
-                    }
+                
+                .hotel-box-details__name {
+                    font-size: 19px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                    color: $DARK_GRAY_TEXT;
+                }
 
-                    .hotel-box-details__history {
-                        font-size: 16px;
-                        font-weight: 300;
-                        color: $DARK_GRAY_TEXT;
-                    }
+                .hotel-box-details__rating {
+                    display: inline-block;
+                    color: $GRAY_ICON;
+                    font-size: 23px;
+                }
+                
 
-                    .home-hoteller-tilbud__se-alle-tilbud {
-                        font-size: 16px;
-                    }
+                .hotel-box-details__history {
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: $DARK_GRAY_TEXT;
+                }
+
+                .home-hoteller-tilbud__se-alle-tilbud {
+                    font-size: 16px;
                 }
             }
 
             .hotel-box-content__book {
-                clear: right;
-                width: 30%;
+                display: inline-block;
+
+                p {
+                    margin-bottom: 0 !important;
+                }
+
+                .book__old-price {
+                    position: relative;
+
+                    span:before {
+                        content: "";
+                        position: absolute;
+                        border-top: 1px solid $DARK_GRAY_TEXT;
+                        top: 10px;
+                        width: 100px;
+                    }
+                }
 
                 .book__old-price {
                     font-size: 16px;
@@ -94,12 +133,97 @@
                 }
 
                 .book__button {
-                    padding: 10px 30px;
+                    display: inline-block;
+                    padding: 5px 30px;
                     font-size: 18px;
                     font-weight: 700;
                     color: $WHITE;
                     background: $OCEAN_BLUE;
                     text-decoration: none;
+                }
+            }
+
+            @media (max-width: $SMALL_LAPTOP) {
+                .hotel-box-content__details {
+                    width: 66%;
+                }
+
+                .hotel-box-content__book {
+                    padding-left: 4px;
+                }
+            }
+
+            @media (max-width: $TABLET) {
+                .hotel-box-content__details {
+                    width: 65.5%;
+                }
+
+                .hotel-box-content__book {
+                    padding-left: 25px;
+                }
+            }
+        }
+
+        @media (max-width: $SMALL_LAPTOP) {
+            padding: 25px 25px;
+        }
+
+        @media (max-width: $TABLET) {
+            padding: 25px 25px;
+        }
+
+        @media (max-width: $BIG_PHONE) {
+            .hotel-box__image {
+                width: 100%;
+                min-height: 125px;
+                float: none;
+                clear: both;
+
+                .image-desktop {
+                   display: none;
+                }
+
+                .image-mobile {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+
+                    background-repeat: no-repeat !important;
+                    background-size: cover !important;
+                    background-position: center center;
+                }
+            }
+
+            .hotel-box__content {
+                padding: 0;
+                position: relative;
+                top: -25px;
+
+                .hotel-box-content__details {
+                    width: 100%;
+
+                    .hotel-box-details__tilbud {
+                        span {
+                            height: 40px;
+                            padding: 10px;
+                            display: inline-block;
+                            background-color: #fff;
+                        }
+                    }
+
+                    .hotel-box-details__name, .hotel-box-details__history, .home-hoteller-tilbud__se-alle-tilbud {
+                        padding: 0 7px;
+                    }
+
+                    .hotel-box-details__name {
+                        margin-top: -10px;
+                    }
+                }
+
+                .hotel-box-content__book {
+                    position: absolute;
+                    right: 0;
+                    top: 35px;
                 }
             }
         }
