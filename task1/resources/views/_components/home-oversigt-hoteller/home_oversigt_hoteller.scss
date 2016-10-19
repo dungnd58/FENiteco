@@ -1,0 +1,76 @@
+.home-oversigt-hoteller-wrapper {
+    background-color: $WHITE;
+    color: $DARK_GRAY_TEXT;
+
+    .home-oversigt-hoteller__title {
+        padding: 20px 25px;
+        font-size:25px;
+        font-weight: bold;
+        border-bottom: 1px solid $LIGHT_GRAY_BORDER;
+    }
+
+    .home-oversigt-hoteller__table th, .home-oversigt-hoteller__table td {
+        width: 10%;
+    }
+    
+    .home-oversigt-hoteller__table {
+
+        .home-oversigt-hoteller-list__heading, .home-oversigt-hoteller-list__content {
+            .hoteller-list-item__name, .hoteller-list-item__centrum,
+            .hoteller-list-item__centrum, .hoteller-list-item__varelser,
+            .hoteller-list-item__stjerner, .hoteller-list-item__by,
+            .hoteller-list-item__book {
+                font-weight: 700;
+                font-size: 14px;
+                padding: 10px 10px;
+                border-bottom: 1px solid $LIGHT_GRAY_BORDER;
+            }
+
+            .hoteller-list-item__name {
+                width: 50%;
+                padding-left: 25px;
+
+                .fa-sort-down {
+                    position: relative;
+                    top: -3px;
+                    color: $OCEAN_BLUE;
+                }
+            }
+
+            .hoteller-list-item__by {
+                width: 25%;
+            }
+
+            .hoteller-list-item__book {
+                padding-right: 25px;
+            }
+        }
+
+        .home-oversigt-hoteller-list__content {
+            .hoteller-list-item__name, .hoteller-list-item__centrum,
+            .hoteller-list-item__centrum, .hoteller-list-item__varelser,
+            .hoteller-list-item__stjerner, .hoteller-list-item__by,
+            .hoteller-list-item__book {
+                font-weight: 300;
+                font-size: 15px;
+            }
+
+            .hoteller-list-item__centrum, .hoteller-list-item__varelser,
+            .hoteller-list-item__stjerner {
+                text-align: center;
+            }
+
+            .hoteller-list-item__book {
+                font-weight: 700;
+                color: $OCEAN_BLUE;
+            }
+        }
+    }
+
+    .home-oversigt-hoteller__se-alle-hoteller {
+        color: $OCEAN_BLUE;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 10px 25px;
+    }
+}

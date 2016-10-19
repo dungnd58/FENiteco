@@ -1,0 +1,147 @@
+{
+    "items": [
+        {
+            "name": "Hotel Alexandra",
+            "centrum": "0,2",
+            "valrelser": "25",
+            "stjerner": "4",
+            "by": "Kobenhavn V",
+            "book": ""
+        },
+        
+        {
+            "name": "Selandia Budget Hotel Copenhagen",
+            "centrum": "0,6",
+            "valrelser": "125",
+            "stjerner": "3",
+            "by": "Kobenhavn K",
+            "book": ""
+        },
+
+        {
+            "name": "Clarion Collection Hotel Twentyseven",
+            "centrum": "0,5",
+            "valrelser": "365",
+            "stjerner": "3",
+            "by": "Kobenhavn K",
+            "book": ""
+        },
+
+        {
+            "name": "Scandic Sydhavnen",
+            "centrum": "0,2",
+            "valrelser": "47",
+            "stjerner": "3",
+            "by": "Kobenhavn S",
+            "book": ""
+        },
+
+        {
+            "name": "Savoy Hotel",
+            "centrum": "0,4",
+            "valrelser": "56",
+            "stjerner": "2",
+            "by": "Kobenhavn V",
+            "book": ""
+        },
+
+        {
+            "name": "Scandic Palace Hotel",
+            "centrum": "1,0",
+            "valrelser": "214",
+            "stjerner": "5",
+            "by": "Kobenhvn V",
+            "book": ""
+        },
+
+        {
+            "name": "Hotel Maritime",
+            "centrum": "1,1",
+            "valrelser": "22",
+            "stjerner": "5",
+            "by": "Kobenhavn K",
+            "book": ""
+        },
+
+        {
+            "name": "Phoenix Copenhagen",
+            "centrum": "0,6",
+            "valrelser": "236",
+            "stjerner": "4",
+            "by": "Kobenhavn K",
+            "book": ""
+        },
+
+        {
+            "name": "Hotel Alexandra",
+            "centrum": "0,2",
+            "valrelser": "25",
+            "stjerner": "4",
+            "by": "Kobenhavn V",
+            "book": ""
+        },
+        
+        {
+            "name": "Selandia Budget Hotel Copenhagen",
+            "centrum": "0,6",
+            "valrelser": "125",
+            "stjerner": "3",
+            "by": "Kobenhavn K",
+            "book": ""
+        },
+
+        {
+            "name": "Clarion Collection Hotel Twentyseven",
+            "centrum": "0,5",
+            "valrelser": "365",
+            "stjerner": "3",
+            "by": "Kobenhavn K",
+            "book": ""
+        },
+
+        {
+            "name": "Scandic Sydhavnen",
+            "centrum": "0,2",
+            "valrelser": "47",
+            "stjerner": "3",
+            "by": "Kobenhavn S",
+            "book": ""
+        },
+
+        {
+            "name": "Savoy Hotel",
+            "centrum": "0,4",
+            "valrelser": "56",
+            "stjerner": "2",
+            "by": "Kobenhavn V",
+            "book": ""
+        },
+
+        {
+            "name": "Scandic Palace Hotel",
+            "centrum": "1,0",
+            "valrelser": "214",
+            "stjerner": "5",
+            "by": "Kobenhvn V",
+            "book": ""
+        },
+
+        {
+            "name": "Hotel Maritime",
+            "centrum": "1,1",
+            "valrelser": "22",
+            "stjerner": "5",
+            "by": "Kobenhavn K",
+            "book": ""
+        },
+
+        {
+            "name": "Phoenix Copenhagen",
+            "centrum": "0,6",
+            "valrelser": "236",
+            "stjerner": "4",
+            "by": "Kobenhavn K",
+            "book": ""
+        }
+    ]
+}

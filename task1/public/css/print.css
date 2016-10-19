@@ -2910,6 +2910,56 @@ html {
         .home-hoteller-tilbud-wrapper .home-hoteller-tilbud__se-alle-tilbud.footer .fa-sort-down {
           display: inline-block; } }
 
+.home-oversigt-hoteller-wrapper {
+  background-color: #FFF;
+  color: #333333; }
+  .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__title {
+    padding: 20px 25px;
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 1px solid #e6e6e6; }
+  .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table th, .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table td {
+    width: 10%; }
+  .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__heading .hoteller-list-item__name, .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__heading .hoteller-list-item__centrum,
+  .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__heading .hoteller-list-item__centrum, .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__heading .hoteller-list-item__varelser,
+  .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__heading .hoteller-list-item__stjerner, .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__heading .hoteller-list-item__by,
+  .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__heading .hoteller-list-item__book, .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__content .hoteller-list-item__name, .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__content .hoteller-list-item__centrum,
+  .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__content .hoteller-list-item__centrum, .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__content .hoteller-list-item__varelser,
+  .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__content .hoteller-list-item__stjerner, .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__content .hoteller-list-item__by,
+  .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__content .hoteller-list-item__book {
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 10px;
+    border-bottom: 1px solid #e6e6e6; }
+  .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__heading .hoteller-list-item__name, .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__content .hoteller-list-item__name {
+    width: 50%;
+    padding-left: 25px; }
+    .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__heading .hoteller-list-item__name .fa-sort-down, .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__content .hoteller-list-item__name .fa-sort-down {
+      position: relative;
+      top: -3px;
+      color: #0685C5; }
+  .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__heading .hoteller-list-item__by, .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__content .hoteller-list-item__by {
+    width: 25%; }
+  .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__heading .hoteller-list-item__book, .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__content .hoteller-list-item__book {
+    padding-right: 25px; }
+  .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__content .hoteller-list-item__name, .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__content .hoteller-list-item__centrum,
+  .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__content .hoteller-list-item__centrum, .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__content .hoteller-list-item__varelser,
+  .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__content .hoteller-list-item__stjerner, .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__content .hoteller-list-item__by,
+  .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__content .hoteller-list-item__book {
+    font-weight: 300;
+    font-size: 15px; }
+  .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__content .hoteller-list-item__centrum, .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__content .hoteller-list-item__varelser,
+  .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__content .hoteller-list-item__stjerner {
+    text-align: center; }
+  .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__table .home-oversigt-hoteller-list__content .hoteller-list-item__book {
+    font-weight: 700;
+    color: #0685C5; }
+  .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__se-alle-hoteller {
+    color: #0685C5;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 25px; }
+
 .home-hotel-links-wrapper {
   width: 27%;
   color: #333333;

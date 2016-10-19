@@ -1,0 +1,69 @@
+<div class="home-oversigt-hoteller-wrapper">
+
+    <div class="home-oversigt-hoteller__title">
+        <span>OVETSIGT OVER HOTELLER I KOBENHAVN</span>
+    </div>
+
+    <table class="home-oversigt-hoteller__table">
+        
+        <tr class="home-oversigt-hoteller-list__heading">
+            <th class="hoteller-list-item__name">
+                <span>Hoteller </span>
+                <i class="fa fa-sort-down"></i>
+            </th>
+
+            <th class="hoteller-list-item__centrum">
+                <span>Centrum </span>
+            </th>
+
+            <th class="hoteller-list-item__varelser">
+                <span>Valrelser </span>
+            </th>
+
+            <th class="hoteller-list-item__stjerner">
+                <span>Stjerner </span>
+            </th>
+
+            <th class="hoteller-list-item__by">
+                <span>By </span>
+            </th>
+
+            <th class="hoteller-list-item__book">
+                <span>Book </span>
+            </th>
+        </tr>
+
+        <!-- LIST HOTELLER DATA -->
+        {{#each home-oversigt-hoteller-list.items}}
+         <tr class="home-oversigt-hoteller-list__content">
+            <th class="hoteller-list-item__name">
+                <span>{{name}} </span>
+            </th>
+
+            <th class="hoteller-list-item__centrum">
+                <span>{{centrum}} </span>
+            </th>
+
+            <th class="hoteller-list-item__varelser">
+                <span>{{valrelser}} </span>
+            </th>
+
+            <th class="hoteller-list-item__stjerner">
+                <span>{{stjerner}} </span>
+            </th>
+
+            <th class="hoteller-list-item__by">
+                <span>{{by}} </span>
+            </th>
+
+            <th class="hoteller-list-item__book">
+                <span>Book </span>
+            </th>
+        </tr>
+        {{/each}}
+    </table>
+
+    <div class="home-oversigt-hoteller__se-alle-hoteller">
+        <i class="fa fa-angle-down"></i><span> Se alle hoteller </span>
+    </div>
+</div>
