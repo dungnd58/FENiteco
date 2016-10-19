@@ -17,11 +17,8 @@
                 <div class="hotel-box-details__name">
                     {{name}}
                     <div class="hotel-box-details__rating">
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
+                        ★★★★★
+                        <span title="{{rating}}" class="rating-point">★★★★★</span>
                     </div>
                 </div>
                 
@@ -39,4 +36,13 @@
         </div>
     </div>
     {{/each}}
+
+    <div class="home-hoteller-tilbud__se-alle-tilbud footer"><i class="fa fa-sort-down"></i> Se alle tilbud <i class="fa fa-angle-double-right"></i></div>
 </div>
+
+<script>
+    $('.rating-point').each(function () {
+        var rating = $(this).attr("title");
+        $(this).css("width", rating * 20 + "%");
+    })
+</script>

@@ -303,11 +303,11 @@
         $(".home-search-form").toggle(200);
 
         if($(window).width() > 992){
-            if($(".home-hotel-links-wrapper").css("margin-top") == "20px"){
-                $(".home-hotel-links-wrapper").css("margin-top",-200);
+            if($(".home-hotel-links-wrapper").css("margin-top") == "40px"){
+                $(".home-hotel-links-wrapper").css("margin-top",-140);
             } 
-            else if($(".home-hotel-links-wrapper").css("margin-top") == "-200px") {
-                $(".home-hotel-links-wrapper").css("margin-top",20);
+            else if($(".home-hotel-links-wrapper").css("margin-top") == "-140px") {
+                $(".home-hotel-links-wrapper").css("margin-top",40);
             }
         }
     }
@@ -343,11 +343,8 @@
                 <div class="hotel-box-details__name">
                     ANSGAR HOTEL
                     <div class="hotel-box-details__rating">
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
+                        ★★★★★
+                        <span title="3.6" class="rating-point">★★★★★</span>
                     </div>
                 </div>
                 
@@ -377,11 +374,8 @@
                 <div class="hotel-box-details__name">
                     ASCOT HOTEL &amp; SPA
                     <div class="hotel-box-details__rating">
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
+                        ★★★★★
+                        <span title="4.0" class="rating-point">★★★★★</span>
                     </div>
                 </div>
                 
@@ -411,11 +405,8 @@
                 <div class="hotel-box-details__name">
                     HOTEL MARITIME
                     <div class="hotel-box-details__rating">
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
+                        ★★★★★
+                        <span title="3.6" class="rating-point">★★★★★</span>
                     </div>
                 </div>
                 
@@ -433,7 +424,16 @@
         </div>
     </div>
     
+
+    <div class="home-hoteller-tilbud__se-alle-tilbud footer"><i class="fa fa-sort-down"></i> Se alle tilbud <i class="fa fa-angle-double-right"></i></div>
 </div>
+
+<script>
+    $('.rating-point').each(function () {
+        var rating = $(this).attr("title");
+        $(this).css("width", rating * 20 + "%");
+    })
+</script>
 </div>
                 <div class="home-hotel-links-wrapper">
     <div class="home-hotel-links__lidt-om-sitet">

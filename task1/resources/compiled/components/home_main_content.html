@@ -67,11 +67,8 @@
                 <div class="hotel-box-details__name">
                     ANSGAR HOTEL
                     <div class="hotel-box-details__rating">
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
+                        ★★★★★
+                        <span title="3.6" class="rating-point">★★★★★</span>
                     </div>
                 </div>
                 
@@ -101,11 +98,8 @@
                 <div class="hotel-box-details__name">
                     ASCOT HOTEL &amp; SPA
                     <div class="hotel-box-details__rating">
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
+                        ★★★★★
+                        <span title="4.0" class="rating-point">★★★★★</span>
                     </div>
                 </div>
                 
@@ -135,11 +129,8 @@
                 <div class="hotel-box-details__name">
                     HOTEL MARITIME
                     <div class="hotel-box-details__rating">
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
+                        ★★★★★
+                        <span title="3.6" class="rating-point">★★★★★</span>
                     </div>
                 </div>
                 
@@ -157,7 +148,16 @@
         </div>
     </div>
     
+
+    <div class="home-hoteller-tilbud__se-alle-tilbud footer"><i class="fa fa-sort-down"></i> Se alle tilbud <i class="fa fa-angle-double-right"></i></div>
 </div>
+
+<script>
+    $('.rating-point').each(function () {
+        var rating = $(this).attr("title");
+        $(this).css("width", rating * 20 + "%");
+    })
+</script>
 </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
