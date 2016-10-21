@@ -4,66 +4,91 @@
         <span>OVETSIGT OVER HOTELLER I KOBENHAVN</span>
     </div>
 
-    <table class="home-oversigt-hoteller__table">
+    <!-- Desktop view -->
+    <table class="home-oversigt-hoteller__desktop-table">
         
         <tr class="home-oversigt-hoteller-list__heading">
-            <th class="hoteller-list-item__name">
+            <td class="hoteller-list-item__name">
                 <span>Hoteller </span>
                 <i class="fa fa-sort-down"></i>
-            </th>
+            </td>
 
-            <th class="hoteller-list-item__centrum">
+            <td class="hoteller-list-item__centrum">
                 <span>Centrum </span>
-            </th>
+            </td>
 
-            <th class="hoteller-list-item__varelser">
+            <td class="hoteller-list-item__varelser">
                 <span>Valrelser </span>
-            </th>
+            </td>
 
-            <th class="hoteller-list-item__stjerner">
+            <td class="hoteller-list-item__stjerner">
                 <span>Stjerner </span>
-            </th>
+            </td>
 
-            <th class="hoteller-list-item__by">
+            <td class="hoteller-list-item__by">
                 <span>By </span>
-            </th>
+            </td>
 
-            <th class="hoteller-list-item__book">
+            <td class="hoteller-list-item__book">
                 <span>Book </span>
-            </th>
+            </td>
         </tr>
 
         <!-- LIST HOTELLER DATA -->
         {{#each home-oversigt-hoteller-list.items}}
          <tr class="home-oversigt-hoteller-list__content">
-            <th class="hoteller-list-item__name">
+            <td class="hoteller-list-item__name">
                 <span>{{name}} </span>
-            </th>
+            </td>
 
-            <th class="hoteller-list-item__centrum">
+            <td class="hoteller-list-item__centrum">
                 <span>{{centrum}} </span>
-            </th>
+            </td>
 
-            <th class="hoteller-list-item__varelser">
+            <td class="hoteller-list-item__varelser">
                 <span>{{valrelser}} </span>
-            </th>
+            </td>
 
-            <th class="hoteller-list-item__stjerner">
+            <td class="hoteller-list-item__stjerner">
                 <span>{{stjerner}} </span>
-            </th>
+            </td>
 
-            <th class="hoteller-list-item__by">
+            <td class="hoteller-list-item__by">
                 <span>{{by}} </span>
-            </th>
+            </td>
 
-            <th class="hoteller-list-item__book">
+            <td class="hoteller-list-item__book">
                 <span>Book </span>
-            </th>
+            </td>
         </tr>
         {{/each}}
     </table>
 
+    <!-- Mobile view -->
+    <div class="home-oversigt-hoteller__mobile-table">
+        <!-- LIST HOTELLER DATA -->
+        {{#each home-oversigt-hoteller-list.items}}
+         <div class="home-oversigt-hoteller-list__content">
+            <div class="hoteller-list-item__name">
+                <span>{{name}} </span>
+            </div>
+
+            <div class="hoteller-list-item__book">
+                <a>Book </a>
+            </div>
+        </div>
+
+        <div class="hoteller-list-item__details">
+            <span>CENTRUM: {{centrum}} KM</span>
+            <span><i class="fa fa-circle"></i>VAER: {{valrelser}}</span>
+            <span><i class="fa fa-circle"></i>STJERNER: {{stjerner}}</span>
+            <span><i class="fa fa-circle"></i>BY: {{by}}</span>
+        </div>
+        {{/each}}
+    </div>
+
     <div class="home-oversigt-hoteller__se-alle-hoteller">
+        <i class="fa fa-sort-down"></i>
         <i class="fa fa-angle-down"></i><span> Se alle hoteller </span>
     </div>
 </div>

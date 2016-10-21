@@ -9,11 +9,11 @@
         border-bottom: 1px solid $LIGHT_GRAY_BORDER;
     }
 
-    .home-oversigt-hoteller__table th, .home-oversigt-hoteller__table td {
+    .home-oversigt-hoteller__desktop-table th, .home-oversigt-hoteller__desktop-table td {
         width: 10%;
     }
     
-    .home-oversigt-hoteller__table {
+    .home-oversigt-hoteller__desktop-table {
 
         .home-oversigt-hoteller-list__heading, .home-oversigt-hoteller-list__content {
             .hoteller-list-item__name, .hoteller-list-item__centrum,
@@ -72,5 +72,100 @@
         font-size: 18px;
         font-weight: 500;
         padding: 10px 25px;
+
+        .fa-angle-down {
+             display: inline-block;
+        }
+
+        .fa-sort-down {
+            display: none;
+            position: relative;
+            top: -4px;
+            color: $DARK_GRAY_TEXT;
+        }
+    }
+
+    
+    @media screen and (max-width: $PHONE) {
+        .home-oversigt-hoteller__desktop-table {
+            display: none;
+        }
+
+        .home-oversigt-hoteller__mobile-table {
+            display: table !important;
+        }
+
+        .home-oversigt-hoteller__se-alle-hoteller {
+            text-align: center;
+
+            .fa-angle-down {
+                display: none;
+            }
+
+            .fa-sort-down {
+                display: inline-block;
+            }
+        }
+    }
+
+    .home-oversigt-hoteller__mobile-table {
+        display: none;
+        width: 100%;
+
+        .home-oversigt-hoteller-list__content {
+            border: 0;
+            padding: 15px 25px;
+            padding-bottom: 5px;
+            position: relative;
+
+            .hoteller-list-item__name {
+                font-weight: 700;
+                width: 65%;
+            }
+            
+            .hoteller-list-item__book {
+                position: absolute;
+                right: 15px;
+                top: 15px;
+
+                a {
+                    text-decoration: none;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    color: $WHITE;
+                    background-color: $OCEAN_BLUE;
+                    padding: 5px 15px;
+                }
+            }
+        }
+
+        .hoteller-list-item__details {
+            padding: 15px 25px;
+            padding-top: 5px;
+            text-transform: uppercase;
+            color: $GRAY;
+            border-bottom: 1px solid $LIGHT_GRAY_BORDER;
+            font-size: 11px;
+
+            span {
+                padding: 0 8px;
+                position: relative;
+            }
+
+            span:nth-child(1) {
+                padding-left: 0;
+            }
+
+            span:nth-child(4) {
+                padding-right: 0;
+            }
+
+            i.fa-circle {
+                position: absolute;
+                font-size: 3px;
+                top: 5px;
+                left: 0;
+            }
+        }
     }
 }
