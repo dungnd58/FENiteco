@@ -72,6 +72,7 @@
         font-size: 18px;
         font-weight: 500;
         padding: 10px 25px;
+        border-bottom: 1px solid $LIGHT_GRAY_BORDER;
 
         .fa-angle-down {
              display: inline-block;
@@ -111,6 +112,24 @@
     .home-oversigt-hoteller__mobile-table {
         display: none;
         width: 100%;
+
+        .home-over-sight-hoteller-antal-stjerner {
+            padding: 15px 25px;
+            border-bottom: 1px solid $LIGHT_GRAY_BORDER;
+
+            .home-over-sight-hoteller_toggle-button {
+                border: 1px solid $DARK_GRAY_TEXT;
+                position: relative;
+                text-align: center;
+                padding: 10px;
+                font-weight: 700;
+
+                .fa-sort-down {
+                    position: absolute;
+                    right: 20px;
+                }
+            }
+        }
 
         .home-oversigt-hoteller-list__content {
             border: 0;
@@ -165,6 +184,44 @@
                 font-size: 3px;
                 top: 5px;
                 left: 0;
+            }
+        }
+    }
+
+    .home-oversigt-hoteller__inspiration {
+        width: 100%;
+        padding: 20px 25px;
+        line-height: 1.4;
+
+        .home-oversigt-hoteller-inspiration__image {
+            background-size: cover;
+            background-position: center;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            float: left;
+        }
+
+        .home-oversigt-hoteller-inspiration__content {
+            padding-top: 10px;
+            margin-left: 100px;
+
+            .inspiration-content__title {
+                font-weight: 700;
+                margin-bottom: 5px;
+
+            }
+
+            .inspiration-content__details {
+                a {
+                    text-decoration: none;
+                    color: $OCEAN_BLUE;
+                    font-weight: 700;
+                }
+            }
+
+            @media screen and (max-width: $SMALL_LAPTOP){
+                padding-top: 0;
             }
         }
     }

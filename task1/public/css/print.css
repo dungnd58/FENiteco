@@ -2958,7 +2958,8 @@ html {
     color: #0685C5;
     font-size: 18px;
     font-weight: 500;
-    padding: 10px 25px; }
+    padding: 10px 25px;
+    border-bottom: 1px solid #e6e6e6; }
     .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__se-alle-hoteller .fa-angle-down {
       display: inline-block; }
     .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__se-alle-hoteller .fa-sort-down {
@@ -2980,6 +2981,18 @@ html {
   .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__mobile-table {
     display: none;
     width: 100%; }
+    .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__mobile-table .home-over-sight-hoteller-antal-stjerner {
+      padding: 15px 25px;
+      border-bottom: 1px solid #e6e6e6; }
+      .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__mobile-table .home-over-sight-hoteller-antal-stjerner .home-over-sight-hoteller_toggle-button {
+        border: 1px solid #333333;
+        position: relative;
+        text-align: center;
+        padding: 10px;
+        font-weight: 700; }
+        .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__mobile-table .home-over-sight-hoteller-antal-stjerner .home-over-sight-hoteller_toggle-button .fa-sort-down {
+          position: absolute;
+          right: 20px; }
     .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__mobile-table .home-oversigt-hoteller-list__content {
       border: 0;
       padding: 15px 25px;
@@ -3018,6 +3031,30 @@ html {
         font-size: 3px;
         top: 5px;
         left: 0; }
+  .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__inspiration {
+    width: 100%;
+    padding: 20px 25px;
+    line-height: 1.4; }
+    .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__inspiration .home-oversigt-hoteller-inspiration__image {
+      background-size: cover;
+      background-position: center;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      float: left; }
+    .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__inspiration .home-oversigt-hoteller-inspiration__content {
+      padding-top: 10px;
+      margin-left: 100px; }
+      .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__inspiration .home-oversigt-hoteller-inspiration__content .inspiration-content__title {
+        font-weight: 700;
+        margin-bottom: 5px; }
+      .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__inspiration .home-oversigt-hoteller-inspiration__content .inspiration-content__details a {
+        text-decoration: none;
+        color: #0685C5;
+        font-weight: 700; }
+      @media screen and (max-width: 1200px) {
+        .home-oversigt-hoteller-wrapper .home-oversigt-hoteller__inspiration .home-oversigt-hoteller-inspiration__content {
+          padding-top: 0; } }
 
 .home-hotel-links-wrapper {
   width: 27%;
