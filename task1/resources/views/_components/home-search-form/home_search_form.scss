@@ -133,6 +133,8 @@
             margin-bottom: 10px;
 
             .number-drop-lists__items {
+                position: relative;
+                height: 55px;
 
                 .search-form-input-title {
                     min-width: 150px;
@@ -143,6 +145,16 @@
                     width: 48px;
                     text-align: center;
                     padding-left: 13px;
+                    position: absolute;
+                    right: 0;
+                }
+
+                @media screen and (max-width: $PHONE) {
+                    height: auto;
+
+                    .search-form-drop-list {
+                        position: static;
+                    }
                 }
             }
         }
