@@ -11,18 +11,10 @@
             <p class="search-form-input-title">
                 By/Omrade:
             </p>
+            
+            {{> search_form_select_input search_form_select_lists.options.[0]}}
 
-            <select class="search-form-drop-list" name="searching-city">
-                <option value="volvo">Kobenhavn</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-            </select>
-
-            <select class="search-form-drop-list" name="searching-town">
-                <option value="volvo">Alle</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-            </select>
+            {{> search_form_select_input search_form_select_lists.options.[1]}}
         </div>
 
         <div class="search-form__calender-boxs">

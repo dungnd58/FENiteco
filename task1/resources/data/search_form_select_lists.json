@@ -1,0 +1,45 @@
+{
+    "options": [
+        {
+            "option": {
+                "input_name": "search-city",
+
+                "lists": [
+                    {
+                        "name": "Kobenhavn",
+                        "value": "kobenhavn"
+                    },
+                    {
+                        "name": "Saab",
+                        "value": "saab"
+                    },
+                    {
+                        "name": "Opel",
+                        "value": "opel"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "option": {
+                "input_name": "search-town",
+
+                "lists": [
+                    {
+                        "name": "Kobenhavn",
+                        "value": "kobenhavn"
+                    },
+                    {
+                        "name": "Saab",
+                        "value": "saab"
+                    },
+                    {
+                        "name": "Opel",
+                        "value": "opel"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -17,25 +17,11 @@
             <span>Del pa: </span>
 
             <div class="home-header-social-icon__list">
+                {{#each home_header_social_icon.items}}
                 <div class="social-icon-list__item">
-                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-{{name}}"></i>
                 </div>
-
-                <div class="social-icon-list__item">
-                    <i class="fa fa-twitter"></i>
-                </div>
-
-                <div class="social-icon-list__item">
-                    <i class="fa fa-youtube"></i>
-                </div>
-
-                <div class="social-icon-list__item">
-                    <i class="fa fa-instagram"></i>
-                </div>
-
-                <div class="social-icon-list__item">
-                    <i class="fa fa-google-plus"></i>
-                </div>
+                {{/each}}
             </div>
 
             <!-- Mobile -->
@@ -44,35 +30,13 @@
             </a>
 
             <ul class="social-drop-down-list">
+                {{#each home_header_social_icon.items}}
                 <li class="social-drop-down-list__item">
                     <div class="social-icon-list__item">
-                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-{{name}}"></i>
                     </div>
                 </li>
-
-                <li class="social-drop-down-list__item">
-                    <div class="social-icon-list__item">
-                        <i class="fa fa-twitter"></i>
-                    </div>
-                </li>
-
-                <li class="social-drop-down-list__item">
-                    <div class="social-icon-list__item">
-                        <i class="fa fa-youtube"></i>
-                    </div>
-                </li>
-
-                <li class="social-drop-down-list__item">
-                    <div class="social-icon-list__item">
-                        <i class="fa fa-instagram"></i>
-                    </div>
-                </li>
-
-                <li class="social-drop-down-list__item">
-                    <div class="social-icon-list__item">
-                        <i class="fa fa-google-plus"></i>
-                    </div>
-                </li>
+                {{/each}}
             </ul>
         </div>
     </div>

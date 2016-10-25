@@ -1,25 +1,21 @@
 ---
 title: "Home Page"
 ---
-<body>
-    <div>
-        {{> home_header }}
+{{> home_header }}
 
-        <div class="home-background-gradient">
+<div class="home-background-gradient">
 
-            <div class="home-background__item"></div>
+    <div class="home-background__item"></div>
 
-            <div class="home-background__item"></div>
-        
-            <div class="home-main-container container">
-                {{> home_red_box }}
-                {{> home_search_form }}
-                {{> home_main_content }}
-                {{> home_hotel_links }}
-            </div>
-        
-        </div>
-        
-        {{> home_footer }}
+    <div class="home-background__item"></div>
+
+    <div class="home-main-container container">
+        {{> home_red_box }}
+        {{> home_search_form }}
+        {{> home_main_content }}
+        {{> home_hotel_links }}
     </div>
-</body>
+
+</div>
+
+{{> home_footer }}
