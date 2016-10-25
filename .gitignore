@@ -1,1 +1,4 @@
 task1\public\
+*.css
+task1/public/css/print.css
+*.map

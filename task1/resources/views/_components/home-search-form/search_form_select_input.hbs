@@ -1,5 +1,5 @@
 <select class="search-form-drop-list" name="{{option.input_name}}">
-    {{#each option.[0].lists}}
-        <option value="{{value}}">{{name}}</option>
+    {{#each option.lists}}
+        <option value="{{this.value}}">{{this.name}}</option>
     {{/each}}
 </select>
