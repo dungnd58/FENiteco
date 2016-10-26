@@ -5,199 +5,190 @@
 .home-footer-container {
     background-color: $WHITE;
 
-    .home-footer-wrapper {
-        height: 100%;
-        text-align: center;
-        color: $DARK_GRAY_TEXT;
-        font-size: 15px;
-        padding: 15px 20px;
+    .home-footer- {
+        &wrapper {
+            height: 100%;
+            text-align: center;
+            color: $DARK_GRAY_TEXT;
+            font-size: 15px;
+            padding: 15px 20px;
 
-        .home-footer-list-links, .home-footer-social, .home-footer-email {
-            display: inline-block;
-            text-align: left;
-        }
-
-        .home-footer-list-links {
-            width: 28%;
-            padding: 15px 0;
-        }
-
-        .home-footer-list-links {
-            .list-links__content {
-                padding: 0 18px;
-            }
-        }
-
-
-        .home-footer-social {
-            width: 18%;
-            top: -15px;
-            position: relative;
-
-            .social-icon__wrapper {
-                widows: 100%;
-                height: 40px;
-                line-height: 2.7;
-
-                .social-icon__icon {
-                    cursor: pointer;
+            .home-footer- {
+                &list-links, &social, &email {
                     display: inline-block;
-                    color: $WHITE;
-                    background-color: $BLACK;
-                    border-radius: 50%;
-                    font-size: 16px;
-                    height: 30px;
-                    width: 30px;
-                    text-align: center;
-                    line-height: 2;
+                    text-align: left;
                 }
 
-                span { margin-left: 7px; }
-            }
+                &list-links {
+                    width: 28%;
+                    padding: 15px 0;
 
-            @media (max-width: $PHONE) {
-                text-align: center;
-                padding: 13px 0;
+                    .list-links__content {
+                        padding: 0 18px;
+                    }
 
-                .list-links__title, .social-icon__wrapper {
-                    display: inline-block;
+                    @media (max-width: $TABLET){
+                        width: 39%;
+                        padding-left: 4vw;
+                    }
+
+                    @media (max-width: $PHONE){
+                        width: 49.5%;
+                        padding-left: 10vw;
+                    }
+
+                    @media (max-width: $SMALL_PHONE){
+                        width: 45%;
+                        padding-left: 15px;
+                    }
+
                 }
 
-                .social-icon__wrapper {
-                    margin-left: 10px;
+                &social {
+                    width: 18%;
+                    top: -15px;
+                    position: relative;
+
+                    .social-icon__wrapper {
+                        widows: 100%;
+                        height: 40px;
+                        line-height: 2.7;
+
+                        .social-icon__icon {
+                            cursor: pointer;
+                            display: inline-block;
+                            color: $WHITE;
+                            background-color: $BLACK;
+                            border-radius: 50%;
+                            font-size: 16px;
+                            height: 30px;
+                            width: 30px;
+                            text-align: center;
+                            line-height: 2;
+                        }
+
+                        span { margin-left: 7px; }
+                    }
+
+                    @media (max-width: $TABLET){
+                        width: 20%;
+                    }
+
+                    @media (max-width: $PHONE) {
+                        border-top: 1px solid $LIGHT_GRAY_BORDER;
+                        text-align: center;
+                        padding: 13px 0;
+                        width: 100%;
+                        top: 0;
+
+                        .list-links__title, .social-icon__wrapper {
+                            display: inline-block;
+                        }
+
+                        .social-icon__wrapper {
+                            margin-left: 10px;
+                        }
+                    }
                 }
-            }
-        }
 
-        .home-footer-email {
-            width: 24.5%;
-            top: -60px;
-            position: relative;
+                &email {
+                    width: 24.5%;
+                    top: -60px;
+                    position: relative;
 
-            .email-box__content {
-                display: inline-block;
-                
-                input {
-                    width: 60%;
-                    height: 30px;
-                    padding: 5px;
-                    display: inline-block;
+                    .email-box__content {
+                        display: inline-block;
+                        
+                        input {
+                            width: 60%;
+                            height: 30px;
+                            padding: 5px;
+                            display: inline-block;
+                        }
+
+                        .email-box__submit {
+                            height: 31px;
+                            padding: 5px 10px;
+                            color: $WHITE;
+                            background: $OCEAN_BLUE;
+                            font-weight: 700;
+                            text-decoration: none;
+                            display: inline-block;
+                        }
+                    }
+
+                    @media (max-width: $TABLET){
+                        text-align: center;
+                        padding: 15px 0 12px 0;
+                        line-height: 1;
+                        top: 0;
+                        border-top: 1px solid $LIGHT_GRAY_BORDER;
+                        width: 100%;
+
+                        p {
+                                display: inline-block;
+                        }
+
+                        .email-box__submit {
+                            line-height: 1.3;
+                        }
+                    }
+
+                    @media (max-width: $PHONE){
+                        text-align: center;
+                        padding: 15px 0;
+                        line-height: 1;
+                        width: 100%;
+                        top: 0;
+
+                        p {
+                            display: inline-block;
+                        }
+
+                        .email-box-content {
+                            max-width: 200px;
+
+                            .email-box__submit {
+                                line-height: 1.3;
+                            }
+                        }
+                    }
+
+                    @media (max-width: $SMALL_PHONE){
+                        .email-box__content {
+                            max-width: 180px;
+
+                                input {
+                                    width: 50%;
+                                }
+                        }
+                    }
                 }
 
-                .email-box__submit {
-                    height: 31px;
-                    padding: 5px 10px;
-                    color: $WHITE;
-                    background: $OCEAN_BLUE;
+                .list-links__title {
                     font-weight: 700;
-                    text-decoration: none;
-                    display: inline-block;
+                    font-size: 17px;
+
+                    @media (max-width: $PHONE){
+                        font-size: 15px;
+                    }
                 }
-            }
 
-           @media (max-width: $TABLET){
-               text-align: center;
-               padding: 15px 0 12px 0;
-               line-height: 1;
-               top: 0;
+                &copyright {
+                    width: 100%;
+                    height: 45px;
 
-               p {
-                    display: inline-block;
-               }
-
-               .email-box__submit {
-                   line-height: 1.3;
-               }
-           }
-
-           @media (max-width: $PHONE){
-               text-align: center;
-               padding: 15px 0;
-               line-height: 1;
-
-               p {
-                    display: inline-block;
-               }
-
-               .email-box-content {
-                   max-width: 200px;
-
-                    .email-box__submit {
-                        line-height: 1.3;
+                    .list-links__content {
+                        font-weight: 300;
+                        padding: 10px;
                     }
-               }
-           }
 
-           @media (max-width: $SMALL_PHONE){
-               .email-box__content {
-                   max-width: 180px;
-
-                    input {
-                        width: 50%;
+                    @media (max-width: $TABLET){
+                        border-top: 1px solid $LIGHT_GRAY_BORDER;
+                        width: 100%;
+                        padding: 12px 0;
                     }
-               }
-           }
-        }
-
-        .list-links__title {
-            font-weight: 700;
-            font-size: 17px;
-        }
-
-        .home-footer-copyright {
-            width: 100%;
-            height: 45px;
-
-            .list-links__content {
-                font-weight: 300;
-                padding: 10px;
-            }
-        }
-
-        @media (max-width: $TABLET){
-            .home-footer-list-links{
-                width: 39%;
-                padding-left: 4vw;
-            }
-
-            .home-footer-social {
-                width: 20%;
-            }
-
-            .home-footer-email, .home-footer-copyright {
-                border-top: 1px solid $LIGHT_GRAY_BORDER;
-                width: 100%;
-            }
-
-            .home-footer-copyright {
-                padding: 12px 0;
-            }
-        }
-
-         @media (max-width: $PHONE){ 
-            .list-links__title {
-                font-size: 15px; 
-            }
-
-            .home-footer-list-links {
-                width: 49.5%;
-                padding-left: 10vw;
-            }
-
-            .home-footer-social {
-                border-top: 1px solid $LIGHT_GRAY_BORDER;
-            }
-
-            .home-footer-email, .home-footer-social {
-                width: 100%;
-                top: 0;
-            }
-        }
-
-        @media (max-width: $SMALL_PHONE){ 
-            .home-footer-list-links{
-                width: 45%;
-                padding-left: 15px;
+                }
             }
         }
     }

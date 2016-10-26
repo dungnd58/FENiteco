@@ -7,129 +7,139 @@
     font-size: 15px;
     font-weight: 300;
 
-    .search-form-drop-list {
-        background: linear-gradient(white, $LIGHT_GRAY_TEXT);
-        width: 100%;
-        height: 45px;
-        margin-bottom: 12px;
-        border-color: buttonface;
-    }
-
-    .search-form-input-title {
-        font-size: 15px;
-        font-weight: 700;
-    }
-
-    .home-search-toggle-button {
-        width: 100%;
-        color: $DARK_GRAY_TEXT;
-        font-weight: 700;
-        font-size: 16px;
-        height: 55px;
-        padding: 15px 25px;
-        background: linear-gradient(white, $LIGHT_GRAY_TEXT);
-        position: relative;
-        cursor: pointer;
-
-        i {
-            left: 30px;
-            top: 10px;
-            font-size: 26px;
-            color: $OCEAN_BLUE;
-            position: absolute;
-        }
-
-        span {
-            display: inline-block;
+    .home-search {
+        &-toggle-button {
+            width: 100%;
+            color: $DARK_GRAY_TEXT;
+            font-weight: 700;
+            font-size: 16px;
+            height: 55px;
+            padding: 15px 25px;
+            background: linear-gradient(white, $LIGHT_GRAY_TEXT);
             position: relative;
-            left: 33px;
-            top: 3px;
-        }
+            cursor: pointer;
 
-        @media (max-width: $SMALL_LAPTOP) {
-            span {
-                font-size: 14px;
+            i {
                 left: 30px;
-            }
-        }
-
-        @media (max-width: $TABLET) {
-            i {
-                left: 40px;
-            }
-            
-            span {
-                font-size: 19px;
-                left: 45px;
-                top: 0;
-            }
-        }
-
-        @media (max-width: $SMALL_PHONE) {
-            i {
-                left: 20px;
+                top: 10px;
+                font-size: 26px;
+                color: $OCEAN_BLUE;
+                position: absolute;
             }
 
             span {
-                font-size: 19px;
-                left: 25px;
+                display: inline-block;
+                position: relative;
+                left: 33px;
+                top: 3px;
+            }
+
+            @media (max-width: $SMALL_LAPTOP) {
+                span {
+                    font-size: 14px;
+                    left: 30px;
+                }
+            }
+
+            @media (max-width: $TABLET) {
+                i {
+                    left: 40px;
+                }
+                
+                span {
+                    font-size: 19px;
+                    left: 45px;
+                    top: 0;
+                }
+            }
+
+            @media (max-width: $SMALL_PHONE) {
+                i {
+                    left: 20px;
+                }
+
+                span {
+                    font-size: 19px;
+                    left: 25px;
+                }
             }
         }
-    }
 
-    .home-search-form {
-        padding: 20px 25px;
-        position: relative;
+        &-form {
+            padding: 20px 25px;
+            position: relative;
 
-        p {
-            margin: 3px 0 !important; 
-        }
-
-        .search-form__location-drop-list {
-            margin-bottom: 10px;
-
-            .search-form-drop-list {
-                padding: 0 12px;
+            p {
+                margin: 3px 0 !important; 
             }
-        }
 
-        .search-form__calender-boxs {
-            margin-bottom: 25px;
-            margin-top: 40px;
+            .search-form__ {
+                &location-drop-list {
+                    margin-bottom: 10px;
 
-            .calender-boxs__items {
-                margin-bottom: 10px;
-            
-                .calender-box__content {
-                    width: 100%;
-                    height: 35px;
-                    line-height: 2;
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: nowrap;
-                    border: 1px solid $GRAY_ICON;
-
-                    .box-content__details {
-                        padding: 0 15px;
-                        flex: 1;
-                        height: 100%;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
+                    .search-form-drop-list {
+                        padding: 0 12px;
                     }
+                }
 
-                    .box-content__icon {
+                &calender-boxs {
+                    margin-bottom: 25px;
+                    margin-top: 40px;
 
-                        img {
-                            height: 25px;
-                            padding-right: 10px;
+                    .calender-boxs {
+                        &__items {
+                            margin-bottom: 10px;
+                        
+                            .calender-box__content {
+                                width: 100%;
+                                height: 35px;
+                                line-height: 2;
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: nowrap;
+                                border: 1px solid $GRAY_ICON;
+
+                                .box-content__ {
+                                    &details {
+                                        padding: 0 15px;
+                                        flex: 1;
+                                        height: 100%;
+                                        white-space: nowrap;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                    }
+
+                                    &icon {
+
+                                        img {
+                                            height: 25px;
+                                            padding-right: 10px;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
             }
         }
+    }
 
-        .search-form__number-drop-lists {
+    .search-form {
+        &-drop-list {
+            background: linear-gradient(white, $LIGHT_GRAY_TEXT);
+            width: 100%;
+            height: 45px;
+            margin-bottom: 12px;
+            border-color: buttonface;
+        }
+
+        &-input-title {
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        &__number-drop-lists {
             margin-bottom: 10px;
 
             .number-drop-lists__items {
@@ -142,7 +152,7 @@
                 }
 
                 .search-form-drop-list {
-                    width: 48px;
+                    width: 48px !important;
                     text-align: center;
                     padding-left: 13px;
                     position: absolute;
@@ -159,7 +169,7 @@
             }
         }
 
-        .search-form__check-box {
+        &__check-box {
             position: absolute;
             top: 170px;
 
@@ -194,7 +204,7 @@
             }
         }
 
-        .search-form__sog-button {
+        &__sog-button {
             
             .sog-button {
                 width: 100%;
@@ -211,99 +221,103 @@
                 }
             }
         }
-
-        @media (max-width: $TABLET){
-            padding-left: 40px;
-            padding-bottom: 40px;
-            
-            .search-form__location-drop-list, .search-form__calender-boxs, .search-form__number-drop-lists {
-
-                .search-form-drop-list, .calender-boxs__items, .number-drop-lists__items {
-                    width: 43%;
-                    display: inline-block;
-                }
-
-                .search-form-drop-list {
-                    &:nth-child(3) {
-                        margin-left: 10%;
-                    }
-                }
-
-                .number-drop-lists__items, .calender-boxs__items {
-                    &:nth-child(2) {
-                        margin-left: 10%;
-                    }
-                }
-            }
-
-            .search-form__calender-boxs {
-                margin-top: 0;
-            }
-
-            .search-form__check-box {
-                position: static;
-                top: 0;
-                width: 43%;
-                display: inline-block;
-            }
-
-            .search-form__sog-button {
-                width: 43%;
-                margin-left: 10%;
-                display: inline-block;
-            }
-        }
-
-        @media (max-width: $SMALL_PHONE){
-            padding: 20px;
-            
-            .search-form__location-drop-list, .search-form__calender-boxs, .search-form__number-drop-lists {
-
-                .search-form-drop-list, .calender-boxs__items {
-                    width: 100%;
-                }
-
-                .search-form-drop-list {
-                    &:nth-child(3) {
-                        margin-left: 0;
-                    }
-                }
-
-                .calender-boxs__items {
-                    &:nth-child(2) {
-                        margin-left: 0;
-                    }
-                }
-            }
-
-            .search-form__calender-boxs {
-                margin-top: 0;
-            }
-
-            .search-form__number-drop-lists {
-                margin-top: 55px;
-
-                .search-form-drop-list {
-                    margin-top: 10px;
-                }
-            }
-
-            .search-form__check-box {
-                position: absolute;
-                top: 320px;
-            }
-
-            .search-form__sog-button {
-                width: 100%;
-                margin: 5px auto;
-            }
-        }
     }
-
+        
     @media (max-width: $TABLET){
         margin-top: 50px;
         width: 100%;
         float: none;
         clear: both;
+
+        .home-search-form {
+            padding-left: 40px;
+            padding-bottom: 40px;
+
+            .search-form__ {
+                &location-drop-list, &calender-boxs, &number-drop-lists {
+                    .search-form-drop-list, .calender-boxs__items, .number-drop-lists__items {
+                        width: 43%;
+                        display: inline-block;
+                    }
+
+                    .search-form-drop-list {
+                        &:nth-child(3) {
+                            margin-left: 10%;
+                        }
+                    }
+
+                    .number-drop-lists__items, .calender-boxs__items {
+                        &:nth-child(2) {
+                            margin-left: 10%;
+                        }
+                    }
+                }
+
+                &calender-boxs {
+                    margin-top: 0;
+                }
+
+                &check-box {
+                    position: static;
+                    top: 0;
+                    width: 43%;
+                    display: inline-block;
+                }
+
+                &sog-button {
+                    width: 43%;
+                    margin-left: 10%;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    @media (max-width: $SMALL_PHONE){
+        .home-search-form {
+            padding: 20px 25px;
+
+            .search-form__ {
+                &location-drop-list, &calender-boxs, &number-drop-lists {
+                    .search-form-drop-list, .calender-boxs__items {
+                        width: 100%;
+                    }
+
+                    .search-form-drop-list {
+                        &:nth-child(3) {
+                            margin-left: 0;
+                        }
+                    }
+
+                    .number-drop-lists__items, .calender-boxs__items {
+                        &:nth-child(2) {
+                            margin-left: 0;
+                        }
+                    }
+                }
+
+                &calender-boxs {
+                    margin-top: 0;
+                }
+
+                &number-drop-lists {
+                    margin-top: 55px;
+
+                    .search-form-drop-list {
+                        margin-top: 10px;
+                    }
+                }
+
+                &check-box {
+                    position: absolute;
+                    top: 320px;
+                }
+
+                &sog-button {
+                    width: 100%;
+                    margin: 5px auto;
+                }
+            }
+        }
     }
 }

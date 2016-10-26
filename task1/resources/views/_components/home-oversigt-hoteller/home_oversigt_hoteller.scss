@@ -2,226 +2,241 @@
     background-color: $WHITE;
     color: $DARK_GRAY_TEXT;
 
-    .home-oversigt-hoteller__title {
+    .home-oversigt-hoteller {
+        &__title {
         padding: 20px 25px;
         font-size:25px;
         font-weight: bold;
         border-bottom: 1px solid $LIGHT_GRAY_BORDER;
-    }
+        }
 
-    .home-oversigt-hoteller__desktop-table th, .home-oversigt-hoteller__desktop-table td {
-        width: 10%;
-    }
-    
-    .home-oversigt-hoteller__desktop-table {
+        &__desktop-table th, &__desktop-table td {
+            width: 10%;
+        }
 
-        .home-oversigt-hoteller-list__heading, .home-oversigt-hoteller-list__content {
-            .hoteller-list-item__name, .hoteller-list-item__centrum,
-            .hoteller-list-item__centrum, .hoteller-list-item__varelser,
-            .hoteller-list-item__stjerner, .hoteller-list-item__by,
-            .hoteller-list-item__book {
-                font-weight: 700;
-                font-size: 14px;
-                padding: 10px 10px;
-                border-bottom: 1px solid $LIGHT_GRAY_BORDER;
-            }
+        &__desktop-table {
 
-            .hoteller-list-item__name {
-                width: 50%;
-                padding-left: 25px;
+            .home-oversigt-hoteller-list {
 
-                .fa-sort-down {
-                    position: relative;
-                    top: -3px;
-                    color: $OCEAN_BLUE;
+                &__heading, &__content {
+
+                    .hoteller-list-item {
+
+                        &__name, &__centrum, &__centrum, &__varelser,
+                        &__stjerner, &__by, &__book {
+                            font-weight: 700;
+                            font-size: 14px;
+                            padding: 10px 10px;
+                            border-bottom: 1px solid $LIGHT_GRAY_BORDER;
+                        }
+
+                        &__name {
+                            width: 50%;
+                            padding-left: 25px;
+
+                            .fa-sort-down {
+                                position: relative;
+                                top: -3px;
+                                color: $OCEAN_BLUE;
+                            }
+                        }
+
+                        &__by {
+                            width: 25%;
+                        }
+
+                        &__book {
+                            padding-right: 25px;
+                        }
+                    }
+                }
+
+                &__content {
+
+                    .hoteller-list-item {
+
+                        &__name, &__centrum, &__centrum, &__varelser,
+                        &__stjerner, &__by, &__book {
+                            font-weight: 300;
+                            font-size: 15px;
+                        }
+
+                        &__centrum, &__varelser, &__stjerner {
+                            text-align: center;
+                        }
+
+                        &__book {
+                            font-weight: 700;
+                            color: $OCEAN_BLUE;
+                        }
+                    }
                 }
             }
-
-            .hoteller-list-item__by {
-                width: 25%;
-            }
-
-            .hoteller-list-item__book {
-                padding-right: 25px;
-            }
         }
 
-        .home-oversigt-hoteller-list__content {
-            .hoteller-list-item__name, .hoteller-list-item__centrum,
-            .hoteller-list-item__centrum, .hoteller-list-item__varelser,
-            .hoteller-list-item__stjerner, .hoteller-list-item__by,
-            .hoteller-list-item__book {
-                font-weight: 300;
-                font-size: 15px;
-            }
-
-            .hoteller-list-item__centrum, .hoteller-list-item__varelser,
-            .hoteller-list-item__stjerner {
-                text-align: center;
-            }
-
-            .hoteller-list-item__book {
-                font-weight: 700;
-                color: $OCEAN_BLUE;
-            }
-        }
-    }
-
-    .home-oversigt-hoteller__se-alle-hoteller {
-        color: $OCEAN_BLUE;
-        font-size: 18px;
-        font-weight: 500;
-        padding: 10px 25px;
-        border-bottom: 1px solid $LIGHT_GRAY_BORDER;
-
-        .fa-angle-down {
-             display: inline-block;
-        }
-
-        .fa-sort-down {
-            display: none;
-            position: relative;
-            top: -4px;
-            color: $DARK_GRAY_TEXT;
-        }
-    }
-
-    
-    @media screen and (max-width: $PHONE) {
-        .home-oversigt-hoteller__desktop-table {
-            display: none;
-        }
-
-        .home-oversigt-hoteller__mobile-table {
-            display: table !important;
-        }
-
-        .home-oversigt-hoteller__se-alle-hoteller {
-            text-align: center;
+        &__se-alle-hoteller {
+            color: $OCEAN_BLUE;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 10px 25px;
+            border-bottom: 1px solid $LIGHT_GRAY_BORDER;
 
             .fa-angle-down {
-                display: none;
+                display: inline-block;
             }
 
             .fa-sort-down {
-                display: inline-block;
+                display: none;
+                position: relative;
+                top: -4px;
+                color: $DARK_GRAY_TEXT;
+            }
+        }
+
+        &__mobile-table {
+            display: none;
+            width: 100%;
+
+            .home-over-sight-hoteller-antal-stjerner {
+                padding: 15px 25px;
+                border-bottom: 1px solid $LIGHT_GRAY_BORDER;
+
+                .home-over-sight-hoteller_toggle-button {
+                    border: 1px solid $DARK_GRAY_TEXT;
+                    position: relative;
+                    text-align: center;
+                    padding: 10px;
+                    font-weight: 700;
+
+                    .fa-sort-down {
+                        position: absolute;
+                        right: 20px;
+                    }
+                }
+            }
+
+            .home-oversigt-hoteller-list__content {
+                border: 0;
+                padding: 15px 25px;
+                padding-bottom: 5px;
+                position: relative;
+
+                .hoteller-list-item {
+                    &__name {
+                        font-weight: 700;
+                        width: 65%;
+                    }
+                    
+                    &__book {
+                        position: absolute;
+                        right: 15px;
+                        top: 15px;
+
+                        a {
+                            text-decoration: none;
+                            font-size: 18px;
+                            text-transform: uppercase;
+                            color: $WHITE;
+                            background-color: $OCEAN_BLUE;
+                            padding: 5px 15px;
+                        }
+                    }
+                }
+            }
+
+            .hoteller-list-item__details {
+                padding: 15px 25px;
+                padding-top: 5px;
+                text-transform: uppercase;
+                color: $GRAY;
+                border-bottom: 1px solid $LIGHT_GRAY_BORDER;
+                font-size: 11px;
+
+                span {
+                    padding: 0 8px;
+                    position: relative;
+
+                    &:nth-child(1) {
+                        padding-left: 0;
+                    }
+
+                    &:nth-child(4) {
+                        padding-right: 0;
+                    }
+                }
+
+                i.fa-circle {
+                    position: absolute;
+                    font-size: 3px;
+                    top: 5px;
+                    left: 0;
+                }
+            }
+        }
+
+        &__inspiration {
+            width: 100%;
+            padding: 20px 25px;
+            line-height: 1.4;
+
+            .home-oversigt-hoteller {
+                &-inspiration__image {
+                    background-size: cover;
+                    background-position: center;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    float: left;
+                }
+
+                &-inspiration__content {
+                    padding-top: 10px;
+                    margin-left: 100px;
+
+                    .inspiration-content {
+                        &__title {
+                            font-weight: 700;
+                            margin-bottom: 5px;
+
+                        }
+
+                        &__details {
+                            a {
+                                text-decoration: none;
+                                color: $OCEAN_BLUE;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+
+                    @media screen and (max-width: $SMALL_LAPTOP){
+                        padding-top: 0;
+                    }
+                }
             }
         }
     }
 
-    .home-oversigt-hoteller__mobile-table {
-        display: none;
-        width: 100%;
+    @media screen and (max-width: $PHONE) {
+        .home-oversigt-hoteller {
+            &__desktop-table {
+                display: none;
+            }
 
-        .home-over-sight-hoteller-antal-stjerner {
-            padding: 15px 25px;
-            border-bottom: 1px solid $LIGHT_GRAY_BORDER;
+            &__mobile-table {
+                display: table !important;
+            }
 
-            .home-over-sight-hoteller_toggle-button {
-                border: 1px solid $DARK_GRAY_TEXT;
-                position: relative;
+            &__se-alle-hoteller {
                 text-align: center;
-                padding: 10px;
-                font-weight: 700;
+
+                .fa-angle-down {
+                    display: none;
+                }
 
                 .fa-sort-down {
-                    position: absolute;
-                    right: 20px;
+                    display: inline-block;
                 }
-            }
-        }
-
-        .home-oversigt-hoteller-list__content {
-            border: 0;
-            padding: 15px 25px;
-            padding-bottom: 5px;
-            position: relative;
-
-            .hoteller-list-item__name {
-                font-weight: 700;
-                width: 65%;
-            }
-            
-            .hoteller-list-item__book {
-                position: absolute;
-                right: 15px;
-                top: 15px;
-
-                a {
-                    text-decoration: none;
-                    font-size: 18px;
-                    text-transform: uppercase;
-                    color: $WHITE;
-                    background-color: $OCEAN_BLUE;
-                    padding: 5px 15px;
-                }
-            }
-        }
-
-        .hoteller-list-item__details {
-            padding: 15px 25px;
-            padding-top: 5px;
-            text-transform: uppercase;
-            color: $GRAY;
-            border-bottom: 1px solid $LIGHT_GRAY_BORDER;
-            font-size: 11px;
-
-            span {
-                padding: 0 8px;
-                position: relative;
-            }
-
-            span:nth-child(1) {
-                padding-left: 0;
-            }
-
-            span:nth-child(4) {
-                padding-right: 0;
-            }
-
-            i.fa-circle {
-                position: absolute;
-                font-size: 3px;
-                top: 5px;
-                left: 0;
-            }
-        }
-    }
-
-    .home-oversigt-hoteller__inspiration {
-        width: 100%;
-        padding: 20px 25px;
-        line-height: 1.4;
-
-        .home-oversigt-hoteller-inspiration__image {
-            background-size: cover;
-            background-position: center;
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            float: left;
-        }
-
-        .home-oversigt-hoteller-inspiration__content {
-            padding-top: 10px;
-            margin-left: 100px;
-
-            .inspiration-content__title {
-                font-weight: 700;
-                margin-bottom: 5px;
-
-            }
-
-            .inspiration-content__details {
-                a {
-                    text-decoration: none;
-                    color: $OCEAN_BLUE;
-                    font-weight: 700;
-                }
-            }
-
-            @media screen and (max-width: $SMALL_LAPTOP){
-                padding-top: 0;
             }
         }
     }

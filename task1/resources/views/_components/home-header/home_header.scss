@@ -10,153 +10,87 @@ html {
         padding-top: 30px;
         padding-bottom: 30px;
 
-        .home-header-wrapper__title {
-            float: left;
-            width: 70%;
+        .home-header- {
+            &wrapper__title {
+                float: left;
+                width: 70%;
 
-            img {
-                position: absolute;
-            }
+                img {
+                    position: absolute;
+                }
 
-            img, .home-header__name {
-                display: inline-block;
-                line-height: 1.6;
-            }
-
-            .home-header__name {
-                margin-left: 55px;
-
-                span:nth-child(1), span:nth-child(2){
-                    font-size: 32px;
-                    color: $BROWN_RED;
+                img, .home-header__name {
                     display: inline-block;
-
-                    @media (max-width: $PHONE){
-                        font-size: 26px;
-                        line-height: 2;
-                    }
-
-                     @media (max-width: 565px){
-                        line-height: 1;
-                        letter-spacing: 1px;
-                    } 
-                }
-
-                span:nth-child(2){
-                    color: $BLACK;
-                }
-
-                span:nth-child(3){
-                    font-size: 19px;
-                    color: $GRAY;
-                    font-style: italic;
-                }
-
-                @media (max-width: $SMALL_LAPTOP){
-                    line-height: 1;
-
-                    span:nth-child(3){
-                        display: block;
-                    }
-                }
-
-                @media (max-width: $TABLET){
                     line-height: 1.6;
+                }
+
+                .home-header__name {
+                    margin-left: 55px;
+
+                    span:nth-child(1), span:nth-child(2){
+                        font-size: 32px;
+                        color: $BROWN_RED;
+                        display: inline-block;
+
+                        @media (max-width: $PHONE){
+                            font-size: 26px;
+                            line-height: 2;
+                        }
+
+                        @media (max-width: 565px){
+                            line-height: 1;
+                            letter-spacing: 1px;
+                        } 
+                    }
+
+                    span:nth-child(2){
+                        color: $BLACK;
+                    }
 
                     span:nth-child(3){
-                        display: none;
+                        font-size: 19px;
+                        color: $GRAY;
+                        font-style: italic;
+                    }
+
+                    @media (max-width: $SMALL_LAPTOP){
+                        line-height: 1;
+
+                        span:nth-child(3){
+                            display: block;
+                        }
+                    }
+
+                    @media (max-width: $TABLET){
+                        line-height: 1.6;
+
+                        span:nth-child(3){
+                            display: none;
+                        }
                     }
                 }
             }
-        }
 
-        .home-header-wrapper__social-icon {
-            float: right;
-            width: 30%;
-            text-align: right;
-            line-height: 3.4;
-            position: relative;
-
-            span {
-                font-size: 16px;
-                color: $GRAY;
-            }
-
-            .home-header-social-icon__list {
-                display: inline-block;
-
-                .social-icon-list__item {
-                    cursor: pointer;
-                    display: inline-block;
-                    color: $WHITE;
-                    background-color: $GRAY;
-                    border-radius: 50%;
-                    font-size: 16px;
-                    height: 30px;
-                    width: 30px;
-                    text-align: center;
-                    line-height: 2;
-                }
-            }
-
-            .social-droplist-opening-button {
-                cursor: pointer;
-                text-decoration: none;
-                display: none;
-                width: 90px;
-                height: 47px;
-                border: 1px solid $DARK_GRAY_TEXT;
-                color: $DARK_GRAY_TEXT;
-                font-size: 16px;
-                text-align: center;
-                line-height: 3;
+            &wrapper__social-icon {
+                float: right;
+                width: 30%;
+                text-align: right;
+                line-height: 3.4;
+                position: relative;
 
                 span {
-                    margin-right: 5px;
-                    color: $DARK_GRAY_TEXT;
+                    font-size: 16px;
+                    color: $GRAY;
                 }
 
-                i {
-                    position: absolute;
-                    margin-top: 12px;
-                }
-            }
-
-            .social-drop-down-list {
-                display: none;
-                width: 90px;
-                background-color: $WHITE;
-                position: absolute;
-                z-index: 5;
-                font-size: 16px;
-                text-align: center;
-                line-height: 2.9;
-                border: 1px solid $DARK_GRAY_TEXT;
-                padding: 0;
-                margin-top: -3px;
-                right: 0;
-                
-                .social-drop-down-list__item {
-                    cursor: pointer;
-                    list-style-type: none;
+                .home-header-social-icon__list {
                     display: inline-block;
-                    height: 47px;
-                    width: 100%;
-                    border-bottom: 1px solid $DARK_GRAY_TEXT;
-                    transition: all 200ms ease;
-
-                    &:hover {
-                        background-color: $LIGHT_GRAY_TEXT;
-                    }
-
-                    &:last-child {
-                        border-bottom: 0;
-                    }
 
                     .social-icon-list__item {
+                        cursor: pointer;
                         display: inline-block;
                         color: $WHITE;
-                        background-color: $BLACK;
+                        background-color: $GRAY;
                         border-radius: 50%;
                         font-size: 16px;
                         height: 30px;
@@ -165,15 +99,83 @@ html {
                         line-height: 2;
                     }
                 }
-            }
-
-            @media (max-width: $TABLET){
-                & > span, .home-header-social-icon__list {
-                    display: none;
-                }
 
                 .social-droplist-opening-button {
-                    display: inline-block;
+                    cursor: pointer;
+                    text-decoration: none;
+                    display: none;
+                    width: 90px;
+                    height: 47px;
+                    border: 1px solid $DARK_GRAY_TEXT;
+                    color: $DARK_GRAY_TEXT;
+                    font-size: 16px;
+                    text-align: center;
+                    line-height: 3;
+
+                    span {
+                        margin-right: 5px;
+                        color: $DARK_GRAY_TEXT;
+                    }
+
+                    i {
+                        position: absolute;
+                        margin-top: 12px;
+                    }
+                }
+
+                .social-drop-down-list {
+                    display: none;
+                    width: 90px;
+                    background-color: $WHITE;
+                    position: absolute;
+                    z-index: 5;
+                    font-size: 16px;
+                    text-align: center;
+                    line-height: 2.9;
+                    border: 1px solid $DARK_GRAY_TEXT;
+                    padding: 0;
+                    margin-top: -3px;
+                    right: 0;
+                    
+                    &__item {
+                        cursor: pointer;
+                        list-style-type: none;
+                        display: inline-block;
+                        height: 47px;
+                        width: 100%;
+                        border-bottom: 1px solid $DARK_GRAY_TEXT;
+                        transition: all 200ms ease;
+
+                        &:hover {
+                            background-color: $LIGHT_GRAY_TEXT;
+                        }
+
+                        &:last-child {
+                            border-bottom: 0;
+                        }
+
+                        .social-icon-list__item {
+                            display: inline-block;
+                            color: $WHITE;
+                            background-color: $BLACK;
+                            border-radius: 50%;
+                            font-size: 16px;
+                            height: 30px;
+                            width: 30px;
+                            text-align: center;
+                            line-height: 2;
+                        }
+                    }
+                }
+
+                @media (max-width: $TABLET){
+                    & > span, .home-header-social-icon__list {
+                        display: none;
+                    }
+
+                    .social-droplist-opening-button {
+                        display: inline-block;
+                    }
                 }
             }
         }
